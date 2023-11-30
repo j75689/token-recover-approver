@@ -1,11 +1,11 @@
-package wireset
+package injection
 
 import (
-	"github.com/bnb-chain/airdrop-service/internal/config"
-	"github.com/bnb-chain/airdrop-service/internal/version"
-	"github.com/bnb-chain/airdrop-service/pkg/logger"
-
 	"github.com/rs/zerolog"
+
+	"github.com/bnb-chain/token-recover-approver/internal/config"
+	"github.com/bnb-chain/token-recover-approver/internal/version"
+	"github.com/bnb-chain/token-recover-approver/pkg/logger"
 )
 
 func InitLogger(config *config.Config) (*zerolog.Logger, error) {

@@ -5,18 +5,17 @@ import (
 	"os"
 	"time"
 
-	"github.com/bnb-chain/airdrop-service/internal/app/http"
-	"github.com/bnb-chain/airdrop-service/pkg/util"
 	"github.com/spf13/cobra"
+
+	"github.com/bnb-chain/token-recover-approver/internal/app"
+	"github.com/bnb-chain/token-recover-approver/pkg/util"
 )
 
 // Root command
 var (
-	timeout uint
-	cfgFile string
 	rootCmd = &cobra.Command{
 		Run: func(_ *cobra.Command, _ []string) {
-			app, err := http.Initialize(cfgFile)
+			app, err := app.Initialize(cfgFile)
 			if err != nil {
 				fmt.Println(err.Error())
 				os.Exit(1)
@@ -33,8 +32,14 @@ func Execute() {
 	}
 }
 
+// Flags
+var (
+	timeout uint
+	cfgFile string
+)
+
 func init() {
 	rootCmd.AddCommand(versionCmd)
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "config/default.config.yaml", "config file")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file")
 	rootCmd.PersistentFlags().UintVar(&timeout, "timeout", 300, "graceful shutdown timeout (second)")
 }
