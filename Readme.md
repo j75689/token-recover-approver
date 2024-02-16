@@ -56,7 +56,7 @@ make run
 
 ## How To Get Approval
 ```bash
-curl -X 'POST' http://localhost:8080/approve -d '{"token_symbol": "BNB","owner_pub_key": "0x02dcd743516b78366a217a1bf2aa562ec5accd07163db3332d924fa48e643875a6","owner_signature": "0xcd32af98a3cf4b66deaba53dc81c7cf8c810a83eb2fa23bf1a555a718826e2f03d47e3711a10e1ae72031fcd3faabac51325999d74c0cff31d554b4d657dbc64","claim_address": "0x5b38da6a701c568545dcfcb03fcb875f56beddc4"}'
+curl -X 'POST' http://localhost:8080/approve -d '{"token_symbol": "BNB","owner_pub_key": "0x036d5d41cd7da2e96d39bcbd0390bfed461a86382f7a2923436ff16c65cabc7719","owner_signature": "0x5f5391ba7f2b002b4746025f7e803a43e57a397ea66f3939d05302eb7851bbbc0773cda87aae0fbb1e2a29367b606209ed47dc5cba6d1a83f6b79cb70e56efdb","claim_address": "0x2e9247B67ae885a8dcfBf77Eb6d0e93A32bea24C"}'
 ```
 
 ## Configuration
@@ -72,12 +72,22 @@ curl -X 'POST' http://localhost:8080/approve -d '{"token_symbol": "BNB","owner_p
 |---|---|---|---|---|---|
 | http.addr | HTTP_ADDR | string | | HTTP address | `"0.0.0.0"` |
 | http.port | HTTP_PORT | uint16 | | HTTP port | `8080` |
+| http.read_timeout | HTTP_READ_TIMEOUT | time.Duration | | HTTP read timeout | `"5s"` |
+| http.read_header_timeout | HTTP_READ_HEADER_TIMEOUT | time.Duration | | HTTP read header timeout | `"5s"` |
+| http.write_timeout | HTTP_WRITE_TIMEOUT | time.Duration | | HTTP write timeout | `"10s"` |
+| http.idle_timeout | HTTP_IDLE_TIMEOUT | time.Duration | | HTTP idle timeout | `"5s"` |
+| http.max_header_bytes | HTTP_MAX_HEADER_BYTES | int | | HTTP max header bytes | `1 << 20` |
 |---|---|---|---|---|---|
 | metrics.enable | METRICS_ENABLE | bool | | Whether to enable metrics router | `true` |
 | metrics.pprof | METRICS_PPROF | bool | | Whether to enable pprof router | `false` |
 | metrics.path | METRICS_PATH | string | | Metrics router path | `/metrics` |
 | metrics.addr | METRICS_ADDR | string | | Metrics address | `"0.0.0.0"` |
 | metrics.port | METRICS_PORT | uint16 | | Metrics port | `6060` |
+| metrics.read_timeout | METRICS_READ_TIMEOUT | time.Duration | | Metrics read timeout | `"5s"` |
+| metrics.read_header_timeout | METRICS_READ_HEADER_TIMEOUT | time.Duration | | Metrics read header timeout | `"5s"` |
+| metrics.write_timeout | METRICS_WRITE_TIMEOUT | time.Duration | | Metrics write timeout | `"10s"` |
+| metrics.idle_timeout | METRICS_IDLE_TIMEOUT | time.Duration | | Metrics idle timeout | `"5s"` |
+| metrics.max_header_bytes | METRICS_MAX_HEADER_BYTES | int | | Metrics max header bytes | `1 << 20` |
 |---|---|---|---|---|---|
 | secret.type | SECRET_TYPE | string | | Secret type | `"local"` |
 | secret.local_secret.private_key | SECRET_LOCAL_SECRET_PRIVATE_KEY | string | | Local secret private key | `""` |
