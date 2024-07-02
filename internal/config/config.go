@@ -47,6 +47,7 @@ type HTTPConfig struct {
 	WriteTimeout      time.Duration `mapstructure:"write_timeout"`
 	IdleTimeout       time.Duration `mapstructure:"idle_timeout"`
 	MaxHeaderBytes    int           `mapstructure:"max_header_bytes"`
+	CORSHeaders       http.Header   `mapstructure:"cors_headers"`
 }
 
 func defaultHTTPConfig(v *viper.Viper) {
@@ -57,6 +58,7 @@ func defaultHTTPConfig(v *viper.Viper) {
 	v.SetDefault("http.write_timeout", 10*time.Second)
 	v.SetDefault("http.idle_timeout", 5*time.Second)
 	v.SetDefault("http.max_header_bytes", http.DefaultMaxHeaderBytes)
+	v.SetDefault("http.cors_headers", http.Header{})
 }
 
 type MetricsConfig struct {

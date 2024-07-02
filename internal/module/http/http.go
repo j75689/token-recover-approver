@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/http/pprof"
+	"strings"
 
 	"github.com/felixge/fgprof"
 	"github.com/gorilla/context"
@@ -45,7 +46,7 @@ func (server *HttpServer) Run(config config.HTTPConfig) error {
 		IdleTimeout:       config.IdleTimeout,
 		MaxHeaderBytes:    config.MaxHeaderBytes,
 	}
-	server.setRouter(router)
+	server.setRouter(router, config.CORSHeaders)
 	return server.httpServer.ListenAndServe()
 }
 
@@ -80,13 +81,13 @@ func (server *HttpServer) Shutdown() error {
 	return nil
 }
 
-func (server *HttpServer) setRouter(router *httprouter.Router) {
+func (server *HttpServer) setRouter(router *httprouter.Router, cors http.Header) {
 	server.logger.Info().Msg("http router list")
 	server.logger.Info().Msg("GET /ping")
 	server.logger.Info().Msg("POST /approve")
 
-	router.GET("/ping", server.Ping)
-	router.POST("/approve", server.GetTokenRecoverApproval)
+	router.GET("/ping", wrapCORSHandler(server.Ping, cors))
+	router.POST("/approve", wrapCORSHandler(server.GetTokenRecoverApproval, cors))
 }
 
 func (server *HttpServer) setMetrics(router *httprouter.Router, path string, enablePProf bool) {
@@ -148,5 +149,16 @@ func wrapHttpHandleFunc(h http.HandlerFunc) httprouter.Handle {
 	return func(rw http.ResponseWriter, req *http.Request, ps httprouter.Params) {
 		context.Set(req, "params", ps)
 		h(rw, req)
+	}
+}
+
+// wrapCORSHandler wraps a httprouter.Handle and adds the CORS headers to the response.
+func wrapCORSHandler(h httprouter.Handle, header http.Header) httprouter.Handle {
+	return func(rw http.ResponseWriter, req *http.Request, ps httprouter.Params) {
+		for k, v := range header {
+			rw.Header().Add(k, strings.Join(v, ","))
+		}
+		context.Set(req, "params", ps)
+		h(rw, req, ps)
 	}
 }
