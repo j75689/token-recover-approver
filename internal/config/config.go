@@ -58,7 +58,11 @@ func defaultHTTPConfig(v *viper.Viper) {
 	v.SetDefault("http.write_timeout", 10*time.Second)
 	v.SetDefault("http.idle_timeout", 5*time.Second)
 	v.SetDefault("http.max_header_bytes", http.DefaultMaxHeaderBytes)
-	v.SetDefault("http.cors_headers", http.Header{})
+	defaultCors := http.Header{}
+	defaultCors.Set("Access-Control-Allow-Origin", "*")
+	defaultCors.Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+	defaultCors.Set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization")
+	v.SetDefault("http.cors_headers", defaultCors)
 }
 
 type MetricsConfig struct {
