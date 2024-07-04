@@ -3,10 +3,10 @@ package injection
 import (
 	"errors"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager/aws"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager/local"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager/aws"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager/local"
 )
 
 type SecretType string

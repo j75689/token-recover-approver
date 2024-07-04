@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/bnb-chain/node/app"
-	"github.com/bnb-chain/token-recover-approver/internal/app/tool"
+	"github.com/bnb-chain/token-recover-app/internal/app/tool"
 	"github.com/spf13/cobra"
 )
 

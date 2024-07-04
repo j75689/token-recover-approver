@@ -3,10 +3,10 @@ package app
 import (
 	"golang.org/x/sync/errgroup"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/module/http"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/internal/version"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/module/http"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/internal/version"
 
 	"github.com/rs/zerolog"
 )

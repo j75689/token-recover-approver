@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	APPName = "token-recover-approver"
+	APPName = "token-recover-app"
 )
 
 // Build Info (set via linker flags)

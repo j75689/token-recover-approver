@@ -1,4 +1,4 @@
-module github.com/bnb-chain/token-recover-approver
+module github.com/bnb-chain/token-recover-app
 
 go 1.20
 

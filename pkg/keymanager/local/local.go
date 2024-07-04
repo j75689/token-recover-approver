@@ -3,8 +3,8 @@ package local
 import (
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/bnb-chain/token-recover-approver/pkg/crypto/ethsecp256k1"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager"
+	"github.com/bnb-chain/token-recover-app/pkg/crypto/ethsecp256k1"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager"
 )
 
 var _ keymanager.KeyManager = (*LocalKeyManager)(nil)

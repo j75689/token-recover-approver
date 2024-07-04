@@ -3,8 +3,8 @@ package tool
 import (
 	"github.com/rs/zerolog"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/store"
 )
 
 type Tool struct {

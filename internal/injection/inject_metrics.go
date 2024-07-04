@@ -3,8 +3,8 @@ package injection
 import (
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/bnb-chain/token-recover-approver/internal/metrics"
-	collector "github.com/bnb-chain/token-recover-approver/internal/metrics/prometheus"
+	"github.com/bnb-chain/token-recover-app/internal/metrics"
+	collector "github.com/bnb-chain/token-recover-app/internal/metrics/prometheus"
 )
 
 func InitPrometheusRegister() *prometheus.Registry {

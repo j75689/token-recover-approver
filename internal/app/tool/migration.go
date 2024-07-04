@@ -3,10 +3,10 @@ package tool
 import (
 	"errors"
 
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	gormStore "github.com/bnb-chain/token-recover-approver/internal/store/gorm"
-	"github.com/bnb-chain/token-recover-approver/internal/store/memory"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	gormStore "github.com/bnb-chain/token-recover-app/internal/store/gorm"
+	"github.com/bnb-chain/token-recover-app/internal/store/memory"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 )
 
 var (

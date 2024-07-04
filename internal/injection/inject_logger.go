@@ -3,9 +3,9 @@ package injection
 import (
 	"github.com/rs/zerolog"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/version"
-	"github.com/bnb-chain/token-recover-approver/pkg/logger"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/version"
+	"github.com/bnb-chain/token-recover-app/pkg/logger"
 )
 
 func InitLogger(config *config.Config) (*zerolog.Logger, error) {

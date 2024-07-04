@@ -14,9 +14,9 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 )
 
 type DataSourceTypeName string

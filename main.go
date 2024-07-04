@@ -1,6 +1,6 @@
 package main
 
-import "github.com/bnb-chain/token-recover-approver/cmd"
+import "github.com/bnb-chain/token-recover-app/cmd"
 
 //go:generate wire ./...
 

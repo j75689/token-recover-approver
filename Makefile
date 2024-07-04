@@ -2,7 +2,7 @@
 VERSION=$(shell git describe --tags --always)
 GIT_COMMIT=$(shell git rev-parse HEAD)
 GIT_COMMIT_DATE=$(shell git log -n1 --pretty='format:%cd' --date=format:'%Y%m%d')
-REPO=github.com/bnb-chain/token-recover-approver
+REPO=github.com/bnb-chain/token-recover-app
 
 ldflags = -X $(REPO)/internal/version.AppVersion=$(VERSION) \
           -X $(REPO)/internal/version.GitCommit=$(GIT_COMMIT) \
@@ -27,7 +27,7 @@ run-pgsql:
 	@go run -ldflags="$(ldflags)" main.go --config configs/pgsql.config.yaml
 
 build:
-	go build -ldflags="$(ldflags)" -o ./build/bin/approver main.go
+	go build -ldflags="$(ldflags)" -o ./build/bin/app main.go
 
 build-image:
 	@read -p "Enter Image Name: " IMAGE_NAME; \

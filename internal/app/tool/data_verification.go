@@ -12,8 +12,8 @@ import (
 	"github.com/bnb-chain/node/app"
 	"github.com/bnb-chain/node/app/config"
 	nodetypes "github.com/bnb-chain/node/common/types"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 	"github.com/spf13/viper"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

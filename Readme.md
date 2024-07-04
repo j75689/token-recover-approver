@@ -1,11 +1,11 @@
 # TOKEN RECOVER APPROVER
 
 <p>
-  <a href="https://github.com/bnb-chain/token-recover-approver/blob/develop/COPYING">
+  <a href="https://github.com/bnb-chain/token-recover-app/blob/develop/COPYING">
     <img src="https://img.shields.io/github/license/bnb-chain/token-recover-approver?style=flat-square&color=blue">
   </a>
   <img src="https://img.shields.io/github/go-mod/go-version/bnb-chain/token-recover-approver?style=flat-square">
-  <a href="https://pkg.go.dev/github.com/bnb-chain/token-recover-approver">
+  <a href="https://pkg.go.dev/github.com/bnb-chain/token-recover-app">
     <img src="https://img.shields.io/badge/Go-reference-blue?style=flat-square">
   </a>
 </p>

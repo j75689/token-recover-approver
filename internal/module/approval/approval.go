@@ -16,11 +16,11 @@ import (
 	"github.com/bnb-chain/node/plugins/recover"
 	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/metrics"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/metrics"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 )
 
 type ApprovalService struct {

@@ -7,8 +7,8 @@
 package tool
 
 import (
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/injection"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/injection"
 )
 
 // Injectors from wire.go:

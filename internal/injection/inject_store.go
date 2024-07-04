@@ -8,11 +8,11 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/bnb-chain/token-recover-approver/internal/common"
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/internal/store/gorm"
-	"github.com/bnb-chain/token-recover-approver/internal/store/memory"
+	"github.com/bnb-chain/token-recover-app/internal/common"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/internal/store/gorm"
+	"github.com/bnb-chain/token-recover-app/internal/store/memory"
 )
 
 type StoreType string

@@ -13,12 +13,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/rs/zerolog"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	collector "github.com/bnb-chain/token-recover-approver/internal/metrics/prometheus"
-	"github.com/bnb-chain/token-recover-approver/internal/store"
-	"github.com/bnb-chain/token-recover-approver/internal/store/memory"
-	"github.com/bnb-chain/token-recover-approver/pkg/keymanager/local"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	collector "github.com/bnb-chain/token-recover-app/internal/metrics/prometheus"
+	"github.com/bnb-chain/token-recover-app/internal/store"
+	"github.com/bnb-chain/token-recover-app/internal/store/memory"
+	"github.com/bnb-chain/token-recover-app/pkg/keymanager/local"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 )
 
 const (

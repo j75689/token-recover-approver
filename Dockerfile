@@ -16,7 +16,7 @@ RUN apk add --no-cache ca-certificates libstdc++
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY --from=builder /app/build/bin/approver /app/approver
+COPY --from=builder /app/build/bin/app /app/app
 
 # Create appuser.
 ENV USER=appuser
@@ -33,4 +33,4 @@ RUN chown appuser:appuser /app
 RUN chown appuser:appuser /app/*
 USER appuser:appuser
 
-ENTRYPOINT ["/app/approver"]
+ENTRYPOINT ["/app/app"]

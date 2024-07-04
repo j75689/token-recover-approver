@@ -8,10 +8,10 @@ package app
 import (
 	"github.com/google/wire"
 
-	"github.com/bnb-chain/token-recover-approver/internal/config"
-	"github.com/bnb-chain/token-recover-approver/internal/injection"
-	"github.com/bnb-chain/token-recover-approver/internal/module/approval"
-	"github.com/bnb-chain/token-recover-approver/internal/module/http"
+	"github.com/bnb-chain/token-recover-app/internal/config"
+	"github.com/bnb-chain/token-recover-app/internal/injection"
+	"github.com/bnb-chain/token-recover-app/internal/module/approval"
+	"github.com/bnb-chain/token-recover-app/internal/module/http"
 )
 
 func Initialize(configPath string) (Application, error) {

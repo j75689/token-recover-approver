@@ -4,8 +4,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/collectors"
 
-	"github.com/bnb-chain/token-recover-approver/internal/metrics"
-	"github.com/bnb-chain/token-recover-approver/internal/version"
+	"github.com/bnb-chain/token-recover-app/internal/metrics"
+	"github.com/bnb-chain/token-recover-app/internal/version"
 )
 
 var _ metrics.Metrics = (*Collector)(nil)

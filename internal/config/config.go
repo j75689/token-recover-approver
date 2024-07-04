@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/viper"
 	gormLogger "gorm.io/gorm/logger"
 
-	"github.com/bnb-chain/token-recover-approver/pkg/logger"
+	"github.com/bnb-chain/token-recover-app/pkg/logger"
 )
 
 type Config struct {

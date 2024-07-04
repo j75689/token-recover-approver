@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/bnb-chain/token-recover-approver/internal/app"
-	"github.com/bnb-chain/token-recover-approver/pkg/util"
+	"github.com/bnb-chain/token-recover-app/internal/app"
+	"github.com/bnb-chain/token-recover-app/pkg/util"
 )
 
 // Root command
