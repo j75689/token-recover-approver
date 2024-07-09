@@ -43,7 +43,7 @@ type TokenRecoverEventResponse struct {
 	ContractAddress common.Address           `json:"contract_address,omitempty"`
 }
 
-func (resp *TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
+func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 	type aliasTokenRecoverEventResponse struct {
 		Name            string                   `json:"name"`
 		Symbol          string                   `json:"symbol"`
