@@ -140,7 +140,8 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 						Str("contract_address", vLog.Address.Hex()).
 						Msg("found a log")
 
-					if vLog.Address == TokenRecoveryContractAddress {
+					if vLog.Address == TokenRecoveryContractAddress &&
+						vLog.Topics[0] == tokenRecoverPortalAbi.Events["TokenRecoverRequested"].ID {
 						var tokenRecoverRequestEvent tokenrecoverportal.TokenRecoverRequestedEvent
 						err = tokenRecoverPortalAbi.UnpackIntoInterface(&tokenRecoverRequestEvent, "TokenRecoverRequested", vLog.Data)
 						if err != nil {

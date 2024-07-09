@@ -19,10 +19,20 @@ type TokenInfo struct {
 
 type TokenList map[string]TokenInfo
 
-type MyFloat float64
+type Decimal big.Int
 
-func (f MyFloat) MarshalJSON() ([]byte, error) {
-	return []byte(`"` + fmt.Sprintf("%0.08f", f) + `"`), nil
+var decimalFromBNBChain = big.NewInt(1e8)
+
+func (f Decimal) MarshalJSON() ([]byte, error) {
+	return []byte(`"` +
+		new(big.Int).Div(f.BigInt(), decimalFromBNBChain).String() +
+		"." +
+		fmt.Sprintf("%08d", new(big.Int).Mod(f.BigInt(), decimalFromBNBChain).Uint64()) +
+		`"`), nil
+}
+
+func (f Decimal) BigInt() *big.Int {
+	return (*big.Int)(&f)
 }
 
 type TokenRecoverEventResponse struct {
@@ -30,23 +40,27 @@ type TokenRecoverEventResponse struct {
 	Symbol          string                   `json:"symbol"`
 	Amount          *big.Int                 `json:"amount"`
 	Status          store.TokenRecoverStatus `json:"status"`
-	ContractAddress common.Address           `json:"contract_address"`
+	ContractAddress common.Address           `json:"contract_address,omitempty"`
 }
 
 func (resp *TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 	type aliasTokenRecoverEventResponse struct {
 		Name            string                   `json:"name"`
 		Symbol          string                   `json:"symbol"`
-		Amount          MyFloat                  `json:"amount"`
+		Amount          Decimal                  `json:"amount"`
 		Status          store.TokenRecoverStatus `json:"status"`
-		ContractAddress string                   `json:"contract_address"`
+		ContractAddress string                   `json:"contract_address,omitempty"`
 	}
-	amount, _ := resp.Amount.Float64()
+
+	contractAddr := ""
+	if resp.ContractAddress != store.EmptyAccount {
+		contractAddr = resp.ContractAddress.Hex()
+	}
 	return json.Marshal(&aliasTokenRecoverEventResponse{
 		Name:            resp.Name,
 		Symbol:          resp.Symbol,
-		Amount:          MyFloat(amount / 1e8),
+		Amount:          Decimal(*resp.Amount),
 		Status:          resp.Status,
-		ContractAddress: resp.ContractAddress.Hex(),
+		ContractAddress: contractAddr,
 	})
 }

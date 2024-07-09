@@ -31,11 +31,6 @@ const (
 	Sqlite     DataSourceTypeName = "sqlite"
 )
 
-var (
-	emptyAccount = common.Address{}
-	emptyTxHash  = common.Hash{}
-)
-
 var _supportedDataSource = map[DataSourceTypeName]func(port uint, host, dbname, user, password, connectTimeout, readTimeout, writeTimeout string, sslmode bool) gorm.Dialector{
 	Mysql: func(port uint, host, dbname, user, password, connectTimeout, readTimeout, writeTimeout string, sslmode bool) gorm.Dialector {
 		return mysql.Open(fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=true&loc=UTC&time_zone=UTC&timeout=%s&readTimeout=%s&writeTimeout=%s", user, password, host, port, dbname, connectTimeout, readTimeout, writeTimeout))
@@ -226,7 +221,7 @@ func (s *SQLStore) convertCondition(condition store.TokenRecoverEvent) *TokenRec
 	if !condition.TokenOwner.Empty() {
 		result.TokenOwner = util.EncodeBytesToHex(condition.TokenOwner)
 	}
-	if condition.TokenContractAddress != emptyAccount {
+	if condition.TokenContractAddress != store.EmptyAccount {
 		result.TokenContractAddress = condition.TokenContractAddress.Hex()
 	}
 	if condition.Denom != "" {
@@ -235,7 +230,7 @@ func (s *SQLStore) convertCondition(condition store.TokenRecoverEvent) *TokenRec
 	if condition.Amount != nil {
 		result.Amount = condition.Amount.String()
 	}
-	if condition.ClaimAddress != emptyAccount {
+	if condition.ClaimAddress != store.EmptyAccount {
 		result.ClaimAddress = condition.ClaimAddress.Hex()
 	}
 	if condition.UnlockAt != 0 {
@@ -244,7 +239,7 @@ func (s *SQLStore) convertCondition(condition store.TokenRecoverEvent) *TokenRec
 	if condition.Status != 0 {
 		result.Status = int8(condition.Status)
 	}
-	if condition.WithdrawTxHash != emptyTxHash {
+	if condition.WithdrawTxHash != store.EmptyTxHash {
 		result.WithdrawTxHash = condition.WithdrawTxHash.Hex()
 	}
 	return result

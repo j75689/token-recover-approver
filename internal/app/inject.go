@@ -12,6 +12,18 @@ import (
 	"github.com/rs/zerolog"
 )
 
+type Modules string
+
+func (m Modules) String() string {
+	return string(m)
+}
+
+const (
+	APIModule     Modules = "api"
+	TrackerModule Modules = "tracker"
+	BotModule     Modules = "bot"
+)
+
 type Application struct {
 	logger       *zerolog.Logger
 	config       *config.Config
@@ -20,22 +32,31 @@ type Application struct {
 	store        store.GeneralStore
 }
 
-func (application Application) Start() error {
+func (application Application) Start(modules []Modules) error {
 	application.logger.Info().Str("app_version", version.AppVersion).Str("git_commit", version.GitCommit).Str("git_commit_date", version.GitCommitDate).Msg("version info")
 	eg := errgroup.Group{}
-	eg.Go(func() error {
-		application.logger.Info().Msgf("http server listen %s:%d", application.config.HTTP.Addr, application.config.HTTP.Port)
-		return application.httpServer.Run(application.config.HTTP)
-	})
+	for _, module := range modules {
+		switch module {
+		case APIModule:
+			eg.Go(func() error {
+				application.logger.Info().Msgf("http server listen %s:%d", application.config.HTTP.Addr, application.config.HTTP.Port)
+				return application.httpServer.Run(application.config.HTTP)
+			})
+		case TrackerModule:
+			eg.Go(func() error {
+				return application.eventTracker.StartListeningTokenRecoverEvent()
+			})
+		case BotModule:
+			//TODO
+		}
+	}
+
 	eg.Go(func() error {
 		if !application.config.Metrics.Enable {
 			return nil
 		}
 		application.logger.Info().Msgf("metrics server listen %s:%d", application.config.Metrics.Addr, application.config.Metrics.Port)
 		return application.httpServer.RunMetrics(application.config.Metrics)
-	})
-	eg.Go(func() error {
-		return application.eventTracker.StartListeningTokenRecoverEvent()
 	})
 
 	return eg.Wait()

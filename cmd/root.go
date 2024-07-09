@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/spf13/cobra"
@@ -15,12 +16,19 @@ import (
 var (
 	rootCmd = &cobra.Command{
 		Run: func(_ *cobra.Command, _ []string) {
-			app, err := app.Initialize(cfgFile)
+			application, err := app.Initialize(cfgFile)
 			if err != nil {
 				fmt.Println(err.Error())
 				os.Exit(1)
 			}
-			util.Launch(app.Start, app.Stop, time.Duration(timeout)*time.Second)
+			startWithModules := func() error {
+				appModules := []app.Modules{}
+				for _, module := range strings.Split(modules, ",") {
+					appModules = append(appModules, app.Modules(module))
+				}
+				return application.Start(appModules)
+			}
+			util.Launch(startWithModules, application.Stop, time.Duration(timeout)*time.Second)
 		},
 	}
 )
@@ -36,6 +44,7 @@ func Execute() {
 var (
 	timeout uint
 	cfgFile string
+	modules string
 )
 
 func init() {
@@ -43,4 +52,5 @@ func init() {
 	rootCmd.AddCommand(toolCmd)
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file")
 	rootCmd.PersistentFlags().UintVar(&timeout, "timeout", 300, "graceful shutdown timeout (second)")
+	rootCmd.PersistentFlags().StringVar(&modules, "modules", app.APIModule.String(), "modules to start, separated by comma(api,tracker,bot)")
 }

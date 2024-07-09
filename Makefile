@@ -18,7 +18,7 @@ run:
 	@go run -ldflags="$(ldflags)" main.go --config ./configs/default.config.yaml
 
 run-sqlite:
-	@go run -ldflags="$(ldflags)" main.go --config ./configs/sqlite.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/sqlite.config.yaml --modules "api,tracker"
 
 run-mysql:
 	@go run -ldflags="$(ldflags)" main.go --config ./configs/mysql.config.yaml

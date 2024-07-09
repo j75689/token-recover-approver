@@ -15,6 +15,11 @@ var (
 	ErrRecordNotFound = errors.New("record not found")
 )
 
+var (
+	EmptyAccount = common.Address{}
+	EmptyTxHash  = common.Hash{}
+)
+
 // Proof is a merkle proof of an account
 type Proof struct {
 	Address sdk.AccAddress `json:"address"`
