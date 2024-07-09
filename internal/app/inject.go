@@ -5,6 +5,7 @@ import (
 
 	"github.com/bnb-chain/token-recover-app/internal/config"
 	"github.com/bnb-chain/token-recover-app/internal/module/http"
+	"github.com/bnb-chain/token-recover-app/internal/module/tracker"
 	"github.com/bnb-chain/token-recover-app/internal/store"
 	"github.com/bnb-chain/token-recover-app/internal/version"
 
@@ -12,10 +13,11 @@ import (
 )
 
 type Application struct {
-	logger     *zerolog.Logger
-	config     *config.Config
-	httpServer *http.HttpServer
-	store      store.Store
+	logger       *zerolog.Logger
+	config       *config.Config
+	httpServer   *http.HttpServer
+	eventTracker *tracker.EventTracker
+	store        store.GeneralStore
 }
 
 func (application Application) Start() error {
@@ -31,6 +33,9 @@ func (application Application) Start() error {
 		}
 		application.logger.Info().Msgf("metrics server listen %s:%d", application.config.Metrics.Addr, application.config.Metrics.Port)
 		return application.httpServer.RunMetrics(application.config.Metrics)
+	})
+	eg.Go(func() error {
+		return application.eventTracker.StartListeningTokenRecoverEvent()
 	})
 
 	return eg.Wait()
@@ -54,13 +59,15 @@ func (application Application) Stop() error {
 func newApplication(
 	logger *zerolog.Logger,
 	config *config.Config,
+	store store.GeneralStore,
+	eventTracker *tracker.EventTracker,
 	httpServer *http.HttpServer,
-	store store.Store,
 ) Application {
 	return Application{
-		logger:     logger,
-		config:     config,
-		httpServer: httpServer,
-		store:      store,
+		logger:       logger,
+		config:       config,
+		store:        store,
+		eventTracker: eventTracker,
+		httpServer:   httpServer,
 	}
 }

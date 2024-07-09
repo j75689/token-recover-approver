@@ -22,10 +22,10 @@ func Initialize(configPath string) (*Tool, error) {
 	if err != nil {
 		return nil, err
 	}
-	store, err := injection.InitStore(configConfig, logger)
+	generalStore, err := injection.InitStore(configConfig, logger)
 	if err != nil {
 		return nil, err
 	}
-	tool := newTool(logger, configConfig, store)
+	tool := newTool(logger, configConfig, generalStore)
 	return tool, nil
 }

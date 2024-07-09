@@ -13,14 +13,16 @@ import (
 )
 
 type Config struct {
-	ChainID          string        `mapstructure:"chain_id"`
-	MerkleRoot       string        `mapstructure:"merkle_root"`
-	Logger           LoggerConfig  `mapstructure:"logger"`
-	HTTP             HTTPConfig    `mapstructure:"http"`
-	Metrics          MetricsConfig `mapstructure:"metrics"`
-	Secret           SecretConfig  `mapstructure:"secret"`
-	Store            StoreConfig   `mapstructure:"store"`
-	AccountWhiteList []string      `mapstructure:"account_white_list"`
+	ChainID          string          `mapstructure:"chain_id"`
+	MerkleRoot       string          `mapstructure:"merkle_root"`
+	Logger           LoggerConfig    `mapstructure:"logger"`
+	HTTP             HTTPConfig      `mapstructure:"http"`
+	Metrics          MetricsConfig   `mapstructure:"metrics"`
+	Secret           SecretConfig    `mapstructure:"secret"`
+	Store            StoreConfig     `mapstructure:"store"`
+	BSC              BSCConfig       `mapstructure:"bsc"`
+	TokenList        TokenListConfig `mapstructure:"token_list"`
+	AccountWhiteList []string        `mapstructure:"account_white_list"`
 }
 
 func defaultConfig(v *viper.Viper) {
@@ -166,7 +168,34 @@ func defaultStoreConfig(v *viper.Viper) {
 	v.SetDefault("store.sql_store.max_open_conn", 5)
 	v.SetDefault("store.sql_store.log_level", gormLogger.Info)
 	v.SetDefault("store.sql_store.ssl_mode", false)
+}
 
+type BSCConfig struct {
+	URL           string `mapstructure:"url"`
+	GasLimit      int64  `mapstructure:"gas_limit"`
+	StartHeight   int64  `mapstructure:"start_height"`
+	BlockInterval int64  `mapstructure:"block_interval"`
+	ProcessLimit  int64  `mapstructure:"process_limit"`
+}
+
+func defaultBSCConfig(v *viper.Viper) {
+	v.SetDefault("bsc.url", "")
+	v.SetDefault("bsc.gas_limit", 20000000)
+	v.SetDefault("bsc.start_height", 0)
+	v.SetDefault("bsc.block_interval", 3)
+	v.SetDefault("bsc.process_limit", 1000)
+}
+
+type TokenListConfig struct {
+	Provider string `mapstructure:"provider"`
+	URL      string `mapstructure:"url"`
+	FilePath string `mapstructure:"file_path"`
+}
+
+func defaultTokenListConfig(v *viper.Viper) {
+	v.SetDefault("token_list.provider", "file")
+	v.SetDefault("token_list.url", "")
+	v.SetDefault("token_list.file_path", "./example/store/token_list.json")
 }
 
 func NewConfig(configPath string) (*Config, error) {
@@ -187,6 +216,8 @@ func NewConfig(configPath string) (*Config, error) {
 	defaultMetricsConfig(v)
 	defaultSecretConfig(v)
 	defaultStoreConfig(v)
+	defaultBSCConfig(v)
+	defaultTokenListConfig(v)
 
 	// note: environment variables will override config file
 	// note: environment variables should be in uppercase

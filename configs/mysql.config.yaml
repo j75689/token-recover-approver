@@ -33,4 +33,7 @@ store:
     port: 3306
     user: root
     password: qwer1234
-    
+
+token_list:
+  provider: file
+  URL: ./example/store/token_list.json

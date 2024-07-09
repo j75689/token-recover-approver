@@ -10,7 +10,8 @@ const (
 )
 
 type Response struct {
-	Code  ResponseCode `json:"code"`
+	Code  ResponseCode `json:"code,omitempty"`
+	Count interface{}  `json:"count,omitempty"`
 	Data  interface{}  `json:"data,omitempty"`
 	Error string       `json:"error,omitempty"`
 }

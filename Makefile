@@ -15,16 +15,16 @@ generate:
 	@go generate main.go
 
 run:
-	@go run -ldflags="$(ldflags)" main.go --config configs/default.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/default.config.yaml
 
 run-sqlite:
-	@go run -ldflags="$(ldflags)" main.go --config configs/sqlite.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/sqlite.config.yaml
 
 run-mysql:
-	@go run -ldflags="$(ldflags)" main.go --config configs/mysql.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/mysql.config.yaml
 
 run-pgsql:
-	@go run -ldflags="$(ldflags)" main.go --config configs/pgsql.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/pgsql.config.yaml
 
 build:
 	go build -ldflags="$(ldflags)" -o ./build/bin/app main.go

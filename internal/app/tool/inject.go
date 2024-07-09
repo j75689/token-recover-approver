@@ -11,13 +11,13 @@ type Tool struct {
 	logger *zerolog.Logger
 	config *config.Config
 
-	store store.Store
+	store store.GeneralStore
 }
 
 func newTool(
 	logger *zerolog.Logger,
 	config *config.Config,
-	store store.Store,
+	store store.GeneralStore,
 ) *Tool {
 	return &Tool{
 		logger: logger,

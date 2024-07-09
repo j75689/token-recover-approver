@@ -15,11 +15,15 @@ import (
 
 	"github.com/bnb-chain/token-recover-app/internal/config"
 	"github.com/bnb-chain/token-recover-app/internal/module/approval"
+	"github.com/bnb-chain/token-recover-app/internal/module/tracker"
+	"github.com/bnb-chain/token-recover-app/internal/store"
 )
 
 type HttpServer struct {
 	httpServer      *http.Server
 	approvalService *approval.ApprovalService
+	store           store.GeneralStore
+	tokenList       tracker.TokenList
 
 	registry      *prometheus.Registry
 	metricsServer *http.Server
@@ -27,9 +31,13 @@ type HttpServer struct {
 	logger *zerolog.Logger
 }
 
-func NewHttpServer(approvalService *approval.ApprovalService, registry *prometheus.Registry, logger *zerolog.Logger) *HttpServer {
+func NewHttpServer(
+	approvalService *approval.ApprovalService, store store.GeneralStore, tokenList tracker.TokenList,
+	registry *prometheus.Registry, logger *zerolog.Logger) *HttpServer {
 	return &HttpServer{
 		approvalService: approvalService,
+		store:           store,
+		tokenList:       tokenList,
 		registry:        registry,
 		logger:          logger,
 	}
@@ -85,9 +93,15 @@ func (server *HttpServer) setRouter(router *httprouter.Router, cors http.Header)
 	server.logger.Info().Msg("http router list")
 	server.logger.Info().Msg("GET /ping")
 	server.logger.Info().Msg("POST /approve")
+	server.logger.Info().Msg("OPTION /approve")
+	server.logger.Info().Msg("GET /api/recover/list/<owner>?offset=?&limit=?")
+	server.logger.Info().Msg("GET /api/recover/token/<owner>?symbol=?")
 
 	router.GET("/ping", wrapCORSHandler(server.Ping, cors))
 	router.POST("/approve", wrapCORSHandler(server.GetTokenRecoverApproval, cors))
+	router.OPTIONS("/approve", wrapCORSHandler(server.GetTokenRecoverApproval, cors))
+	router.GET("/api/recover/list/:owner", wrapCORSHandler(server.GetTokenRecoverEvents, cors))
+	router.GET("/api/recover/token/:owner", wrapCORSHandler(server.GetTokenRecoverEvent, cors))
 }
 
 func (server *HttpServer) setMetrics(router *httprouter.Router, path string, enablePProf bool) {

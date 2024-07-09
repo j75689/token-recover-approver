@@ -1,0 +1,3022 @@
+[
+    {
+        "contract_address": "0xfb6115445Bff7b52FeB98650C87f44907E58f802",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Aave Token",
+        "original_symbol": "AAVE",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "AAVE-8FA",
+        "total_supply": "500000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Africa Stable-Coin",
+        "original_symbol": "ABCD",
+        "owner": "bnb1ujvzeuft0ezf9fu4u0mk52t8mc7t8geyfkevms",
+        "symbol": "ABCD-5D8",
+        "total_supply": "3000000.00000000"
+    },
+    {
+        "contract_address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "CardanoBEP2",
+        "original_symbol": "ADA",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "ADA-9F4",
+        "total_supply": "372300000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Aditus",
+        "original_symbol": "ADI",
+        "owner": "bnb1djdymfgzknmcsu9dzm9s0uavdszn0cl82z4hps",
+        "symbol": "ADI-6BB",
+        "total_supply": "750000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Aergo",
+        "original_symbol": "AERGO",
+        "owner": "bnb1llqhwwwmh878844tm3g8v47k0t7xtnhl4hggjl",
+        "symbol": "AERGO-46B",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Alaris",
+        "original_symbol": "ALA",
+        "owner": "bnb1pmdkvw6cquwylr46wcrl82xzmul0y2jpj5cwx7",
+        "symbol": "ALA-DCD",
+        "total_supply": "60000000.00000000"
+    },
+    {
+        "contract_address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "AlpacaToken",
+        "original_symbol": "ALPACA",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "ALPACA-405",
+        "total_supply": "126417919.41798031"
+    },
+    {
+        "contract_address": "0xf307910A4c7bbc79691fD374889b36d8531B08e3",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "ANKR",
+        "original_symbol": "ANKR",
+        "owner": "bnb1hvg059mkwleum35j6y2qjn4fvmgl7zxtlah4tn",
+        "symbol": "ANKR-E97",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "contract_address": "0xBA5F11b16B155792Cf3B2E6880E8706859A8AEB6",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Aeron",
+        "original_symbol": "ARN",
+        "owner": "bnb1dq8ae0ayztqp99peggq5sygzf3n7u2ze4t0jne",
+        "symbol": "ARN-71B",
+        "total_supply": "8772858.25316010"
+    },
+    {
+        "mintable": false,
+        "name": "Anyrent",
+        "original_symbol": "ARNT",
+        "owner": "bnb1gx0e0ye3dmkjhp3faqrhk6c96g2y56gkum8czs",
+        "symbol": "ARNT-C00",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "ARPA",
+        "original_symbol": "ARPA",
+        "owner": "bnb1mecnt25u3j9ne7th5av7hqvnmzvyrr7ny8hg8c",
+        "symbol": "ARPA-575",
+        "total_supply": "42000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Maecenas ART Token",
+        "original_symbol": "ART",
+        "owner": "bnb13plj9kycvcew5v0achpatnd5l5pacys9h0gu8l",
+        "symbol": "ART-3C9",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "contract_address": "0x0Eb3a705fc54725037CC9e008bDede697f62F335",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "ATOMBEP2",
+        "original_symbol": "ATOM",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "ATOM-596",
+        "total_supply": "1120000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Atlas Protocol",
+        "original_symbol": "ATP",
+        "owner": "bnb1msw3avv894nlpeu0vn4qlkl0r65a3rp7gtz5hf",
+        "symbol": "ATP-38C",
+        "total_supply": "40000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "LauriumGold",
+        "original_symbol": "AURO",
+        "owner": "bnb1x6773fnuyk77wfgwc0grc6575s8sazsn229q2w",
+        "symbol": "AURO-39C",
+        "total_supply": "62200.00000000"
+    },
+    {
+        "contract_address": "0x13616F44Ba82D63c8C0DC3Ff843D36a8ec1c05a9",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Travala.com Token",
+        "original_symbol": "AVA",
+        "owner": "bnb1dm9c7gccgd07td5r69m50u8fg8danfgqvlhj6c",
+        "symbol": "AVA-645",
+        "total_supply": "4574230.61496224"
+    },
+    {
+        "mintable": true,
+        "name": "“Atomic",
+        "original_symbol": "AWC",
+        "owner": "bnb1g5xj69c0s0x646hug7j3vr6eamlkf7jw3cr3yw",
+        "symbol": "AWC-8B2",
+        "total_supply": "147.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Atomic Wallet Token",
+        "original_symbol": "AWC",
+        "owner": "bnb1g5xj69c0s0x646hug7j3vr6eamlkf7jw3cr3yw",
+        "symbol": "AWC-986",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "AXPR.B",
+        "original_symbol": "AXPR",
+        "owner": "bnb1zpnmet0vhfupn9ysu26gukzj7a2xkkcry22n9t",
+        "symbol": "AXPR-777",
+        "total_supply": "347955111.02000000"
+    },
+    {
+        "contract_address": "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BakeryToken",
+        "original_symbol": "BAKE",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BAKE-5E0",
+        "total_supply": "561554628.42614181"
+    },
+    {
+        "contract_address": "0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BandProtocolBEP2",
+        "original_symbol": "BAND",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BAND-34B",
+        "total_supply": "2200000.00000000"
+    },
+    {
+        "contract_address": "0x101d82428437127bF1608F699CD651e6Abf9766E",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BasicAttentionToken",
+        "original_symbol": "BAT",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BAT-07A",
+        "total_supply": "20300000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "BAWnetwork",
+        "original_symbol": "BAW",
+        "owner": "bnb1umdp5z4hugur26tcgf48fhr0548fv0q0fga84u",
+        "symbol": "BAW-DFB",
+        "total_supply": "25000000000.00000000"
+    },
+    {
+        "contract_address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BCH BEP2",
+        "original_symbol": "BCH",
+        "owner": "bnb15tjhzw85wyywwp7zvc4l3ux3j0393rzp9exl0p",
+        "symbol": "BCH-1FD",
+        "total_supply": "55000.00000000"
+    },
+    {
+        "contract_address": "0xD475c9c934DCD6d5f1cAC530585aa5ba14185b92",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Bitcoin Cash ABC",
+        "original_symbol": "BCHA",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BCHA-959",
+        "total_supply": "41787.00000000"
+    },
+    {
+        "contract_address": "0xDd3c817354E3855ef2B52D15ad2244793c50385A",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Bitcoin Cash ABC",
+        "original_symbol": "BCHA",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BCHA-A6A",
+        "total_supply": "45000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Blockmason Credit Protocol",
+        "original_symbol": "BCPT",
+        "owner": "bnb1ed7sfac04uzkg8lsxmgl7sxlj8pvyrpnyjm9ew",
+        "symbol": "BCPT-95A",
+        "total_supply": "116158667.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Short Bitcoin Token",
+        "original_symbol": "BEAR",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "BEAR-14C",
+        "total_supply": "50301.00000000"
+    },
+    {
+        "contract_address": "0x8443f091997f06a61670B735ED92734F5628692F",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BellaProtocol",
+        "original_symbol": "BEL",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BEL-D85",
+        "total_supply": "3000000.00000000"
+    },
+    {
+        "contract_address": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BELT Token",
+        "original_symbol": "BELT",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BELT-5A3",
+        "total_supply": "3618934.53491999"
+    },
+    {
+        "mintable": false,
+        "name": "EOSBet Token",
+        "original_symbol": "BET",
+        "owner": "bnb1rgylg0f3ka24a63rnq926quvet438fxrz3320c",
+        "symbol": "BET-844",
+        "total_supply": "88000000.00000000"
+    },
+    {
+        "contract_address": "0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Binance Beacon ETH",
+        "original_symbol": "BETH",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BETH-654",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "BETX Token",
+        "original_symbol": "BETX",
+        "owner": "bnb15v9e3c4wy8vpex0c5fj702lexjesh30v2203f2",
+        "symbol": "BETX-A0C",
+        "total_supply": "200000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Binance GBP Stable Coin",
+        "original_symbol": "BGBP",
+        "owner": "bnb1r4ag7kd90rptlhcuuc8trh60v4m4vvzrfyecta",
+        "symbol": "BGBP-CF3",
+        "total_supply": "200.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Humanity First Token",
+        "original_symbol": "BHFT",
+        "owner": "bnb148t3u8zxa44vhydes5qa8xnxuzuq6zgyxmzt6d",
+        "symbol": "BHFT-BBE",
+        "total_supply": "636425000.00000000"
+    },
+    {
+        "contract_address": "0x9A2f5556e9A637e8fBcE886d8e3cf8b316a1D8a2",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "BIDR BEP2",
+        "original_symbol": "BIDR",
+        "owner": "bnb1v7hlk89x4t6wtfx89wrvhxj5wcv7sxjrve6dav",
+        "symbol": "BIDR-0E9",
+        "total_supply": "3939323576.94000000"
+    },
+    {
+        "mintable": false,
+        "name": "Probien",
+        "original_symbol": "BIEN",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "BIEN-FE2",
+        "total_supply": "217000000.00000000"
+    },
+    {
+        "contract_address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "beefy.finance",
+        "original_symbol": "BIFI",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BIFI-290",
+        "total_supply": "80000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "INR",
+        "original_symbol": "BINR",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BINR-821",
+        "total_supply": "50000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Bitwires Token",
+        "original_symbol": "BKBT",
+        "owner": "bnb104p50kz2uvep5s5u6j0lr6vkl6rp5g4653d7w4",
+        "symbol": "BKBT-3A6",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Binance KRW",
+        "original_symbol": "BKRW",
+        "owner": "bnb18kha55gvsxl7gkdh8y329hu3p6wndh6jkwqnxn",
+        "symbol": "BKRW-AB7",
+        "total_supply": "19027435.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Blockmason Link",
+        "original_symbol": "BLINK",
+        "owner": "bnb1ed7sfac04uzkg8lsxmgl7sxlj8pvyrpnyjm9ew",
+        "symbol": "BLINK-9C6",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "contract_address": "0x0000000000000000000000000000000000000000",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Binance Chain Native Token",
+        "original_symbol": "BNB",
+        "owner": "bnb1ultyhpw2p2ktvr68swz56570lgj2rdsadq3ym2",
+        "symbol": "BNB",
+        "total_supply": "148930232.17301230"
+    },
+    {
+        "mintable": false,
+        "name": "BNTYS",
+        "original_symbol": "BNTYS",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "BNTYS-9BB",
+        "total_supply": "45000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "BOLT Token",
+        "original_symbol": "BOLT",
+        "owner": "bnb177ujwmshxu8r9za4vy9ztqn65tmr54ddw958rt",
+        "symbol": "BOLT-4C6",
+        "total_supply": "980230000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Bitcloud Pro",
+        "original_symbol": "BPRO",
+        "owner": "bnb1482svhhrffpga5wmqw8068af4c9u2q9dp3hg4m",
+        "symbol": "BPRO-5A6",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "BQTX",
+        "original_symbol": "BQTX",
+        "owner": "bnb1j42h6j40htujnjmtp4ckw4zx27vp0f93cvmua8",
+        "symbol": "BQTX-235",
+        "total_supply": "1000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "BlocSets",
+        "original_symbol": "BSEZE",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "BSEZE-F1E",
+        "total_supply": "40000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "BOOSTO",
+        "original_symbol": "BST2",
+        "owner": "bnb19k2av7cmdvp9f0qkeu5vfl59yp8ftqv2s55dzs",
+        "symbol": "BST2-2F2",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "contract_address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Bitcoin BEP2",
+        "original_symbol": "BTCB",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BTCB-1DE",
+        "total_supply": "13801.00000000"
+    },
+    {
+        "contract_address": "0x78650B139471520656b9E7aA7A5e9276814a38e9",
+        "contract_decimals": 17,
+        "mintable": true,
+        "name": "StandardBTCHashrateToken",
+        "original_symbol": "BTCST",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BTCST-C2E",
+        "total_supply": "15000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "BTTB",
+        "original_symbol": "BTTB",
+        "owner": "bnb1srm577fgsjg363vsqt8td4tat5arzfvkjchqgq",
+        "symbol": "BTTB-D31",
+        "total_supply": "3878024526.13000000"
+    },
+    {
+        "mintable": true,
+        "name": "3x Long Bitcoin Token",
+        "original_symbol": "BULL",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "BULL-BE4",
+        "total_supply": "604.80000000"
+    },
+    {
+        "contract_address": "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Bunny Token",
+        "original_symbol": "BUNNY",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BUNNY-2B9",
+        "total_supply": "10336799.73082197"
+    },
+    {
+        "contract_address": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Burger Swap",
+        "original_symbol": "BURGER",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "BURGER-33A",
+        "total_supply": "12284769.53736919"
+    },
+    {
+        "contract_address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Binance USD",
+        "original_symbol": "BUSD",
+        "owner": "bnb19v2ayq6k6e5x6ny3jdutdm6kpqn3n6mxheegvj",
+        "symbol": "BUSD-BD1",
+        "total_supply": "72738410.53221126"
+    },
+    {
+        "mintable": true,
+        "name": "VND",
+        "original_symbol": "BVND",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "BVND-244",
+        "total_supply": "23000000000.00000000"
+    },
+    {
+        "contract_address": "0xcae74533e8605a87564982c03f63Ce44177f1277",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "BXD Token",
+        "original_symbol": "BXD",
+        "owner": "bnb10ly6ezhep35ympqu43uw8jr8km85r2z92ttn2u",
+        "symbol": "BXD-745",
+        "total_supply": "2100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Bezant Token",
+        "original_symbol": "BZNT",
+        "owner": "bnb1w5a5jywe3cu20uq6n6x3vmzcq342s6st4cz73s",
+        "symbol": "BZNT-464",
+        "total_supply": "964511442.00000000"
+    },
+    {
+        "contract_address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "PancakeSwap Token",
+        "original_symbol": "CAKE",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "CAKE-435",
+        "total_supply": "203354881.51716902"
+    },
+    {
+        "contract_address": "0x007EA5C0Ea75a8DF45D288a4debdD5bb633F9e56",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "CanYaCoin",
+        "original_symbol": "CAN",
+        "owner": "bnb16w59lfh4y2cqvu8f7yr000ll37ldh4w6hnz7l0",
+        "symbol": "CAN-677",
+        "total_supply": "95827000.00000000"
+    },
+    {
+        "contract_address": "0x780207B8C0Fdc32cF60E957415bFa1f2d4d9718c",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "CASHAA",
+        "original_symbol": "CAS",
+        "owner": "bnb1xkw2sagpx6t0cmwzapxpv94tupvqk7tpgy72ku",
+        "symbol": "CAS-167",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x34681C1035F97E1eDcccec5f142e02FF81a3A230",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Cubiex",
+        "original_symbol": "CBIX",
+        "owner": "bnb1jlm66w38gpfuqr4s2jcfwlcrlx46p05thdnv7g",
+        "symbol": "CBIX-3C9",
+        "total_supply": "150000000.00000000"
+    },
+    {
+        "contract_address": "0x61a97C4914C43f8BD98D01a99418E826C80AfAdC",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "CryptoBonusMiles",
+        "original_symbol": "CBM",
+        "owner": "bnb1dq8ae0ayztqp99peggq5sygzf3n7u2ze4t0jne",
+        "symbol": "CBM-4B2",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Coralbay",
+        "original_symbol": "CBS",
+        "owner": "bnb15yrgrc8k260n2k7a4r0vzc23m26z35ws7vj65e",
+        "symbol": "CBS-690",
+        "total_supply": "1000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Clipper Coin",
+        "original_symbol": "CCCX",
+        "owner": "bnb1ry99rte8gfnn9c6at9mlmrrq6p2k4u7732j9h7",
+        "symbol": "CCCX-10D",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Chiliz",
+        "original_symbol": "CHZ",
+        "owner": "bnb1cghr4z8ag440tv4wnk3l6wzynytlpvfqltm9ph",
+        "symbol": "CHZ-ECD",
+        "total_supply": "56343223.75279048"
+    },
+    {
+        "mintable": false,
+        "name": "Caldera",
+        "original_symbol": "CLDRA",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "CLDRA-475",
+        "total_supply": "777777777.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "CumulaDAO",
+        "original_symbol": "CMDAO",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "CMDAO-8A6",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Crypto Neo-value Neural System",
+        "original_symbol": "CNNS",
+        "owner": "bnb193wdp4gdnm58urnsjf8nv57lxt58sckt2k50ss",
+        "symbol": "CNNS-E16",
+        "total_supply": "10000000.00000000"
+    },
+    {
+        "contract_address": "0xAb301DaE71f5B386C566f484e636Aee60318F12F",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "CocosTokenV2",
+        "original_symbol": "COCOS",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "COCOS-CED",
+        "total_supply": "5000000.00000000"
+    },
+    {
+        "contract_address": "0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "CompoundCoin",
+        "original_symbol": "COMP",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "COMP-DEE",
+        "total_supply": "20000.00000000"
+    },
+    {
+        "contract_address": "0x96Dd399F9c3AFda1F194182F71600F1B65946501",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Contentos",
+        "original_symbol": "COS",
+        "owner": "bnb1u9j9hkst6gf09dkdvxlj7puk8c7vh68a0kkmht",
+        "symbol": "COS-2E4",
+        "total_supply": "3020474903.60000000"
+    },
+    {
+        "mintable": true,
+        "name": "COTI",
+        "original_symbol": "COTI",
+        "owner": "bnb1kn733gkku9xsqkuk6wcz86gftqtl4qvthvrj5m",
+        "symbol": "COTI-CBB",
+        "total_supply": "80000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Covalent Token",
+        "original_symbol": "COVA",
+        "owner": "bnb1pucvxaf3l9rslupza75r9fca9h5892ntumszfm",
+        "symbol": "COVA-218",
+        "total_supply": "6500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "CPChain",
+        "original_symbol": "CPC",
+        "owner": "bnb1wq4rlwrmvvltlarvypql8wrr4vlh0dczd8uksg",
+        "symbol": "CPC-FED",
+        "total_supply": "150000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Crypterium Token",
+        "original_symbol": "CRPT",
+        "owner": "bnb17fk3uvagucxzpvmdvd373fapqsahxvzevdard9",
+        "symbol": "CRPT-8C9",
+        "total_supply": "99968575.14285720"
+    },
+    {
+        "mintable": false,
+        "name": "“Consentium”",
+        "original_symbol": "CSM",
+        "owner": "bnb1gguz7vcrlf7a87et8u5gt40f0890qvkpkn9y79",
+        "symbol": "CSM-734",
+        "total_supply": "84000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Centraspan",
+        "original_symbol": "CSPAH",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "CSPAH-7D4",
+        "total_supply": "8856700000.00000000"
+    },
+    {
+        "contract_address": "0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
+        "contract_decimals": 6,
+        "mintable": true,
+        "name": "CertiK Token",
+        "original_symbol": "CTK",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "CTK-EB8",
+        "total_supply": "8527982.70591300"
+    },
+    {
+        "mintable": true,
+        "name": "Carbon Dollar",
+        "original_symbol": "CUSD",
+        "owner": "bnb1y9797dtklkm3haajsfnevm9ruuxs5fyf5rpj67",
+        "symbol": "CUSD-24B",
+        "total_supply": "9999999999.00000000"
+    },
+    {
+        "contract_address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "DaiBEP2",
+        "original_symbol": "DAI",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "DAI-D75",
+        "total_supply": "19000000.00000000"
+    },
+    {
+        "contract_address": "0x8ebC361536094fD5B4FFB8521E31900614C9F55D",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "DARC Token",
+        "original_symbol": "DARC",
+        "owner": "bnb1l44zx9euht3rlgy2hxa8gvkc8s0v9jnj9qt7sk",
+        "symbol": "DARC-087",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Konstellation Network",
+        "original_symbol": "DARC",
+        "owner": "bnb1gyhnhdns4vf63nfzfq7g25czj8swjgrz3rhah8",
+        "symbol": "DARC-24B",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "DBitBloc",
+        "original_symbol": "DBKS",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "DBKS-D63",
+        "total_supply": "55700000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Decaying Foundation",
+        "original_symbol": "DCAY",
+        "owner": "bnb105j3f579jqgzadpljkg4u6xadhetq8yaqemzg9",
+        "symbol": "DCAY-F1A",
+        "total_supply": "89994612000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "DeemPay",
+        "original_symbol": "DEEM",
+        "owner": "bnb1nt6acteek690dnnn5ylcw0y0gk6syprcvr2zf6",
+        "symbol": "DEEM-F59",
+        "total_supply": "90000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "DeepCloud",
+        "original_symbol": "DEEP",
+        "owner": "bnb1t0ws9gvnjm7j7qssk8te7m2dt5hmm8s3amqk2d",
+        "symbol": "DEEP-9D3",
+        "total_supply": "200000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "DeFi Token",
+        "original_symbol": "DEFI",
+        "owner": "bnb1q5xefr07503pqtfrl5sfyyhlghxwc80d4vpas2",
+        "symbol": "DEFI-FA5",
+        "total_supply": "2499999800.00000000"
+    },
+    {
+        "contract_address": "0xD98560689C6e748DC37bc410B4d3096B1aA3D8C2",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "DeFi For You.",
+        "original_symbol": "DFY",
+        "owner": "bnb1p300wv4h5t7xglpmkdsk4xrcjlf9h7l2tjjurf",
+        "symbol": "DFY-EA0",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Dialer",
+        "original_symbol": "DIAL",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "DIAL-AF8",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "contract_address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
+        "contract_decimals": 8,
+        "mintable": true,
+        "name": "Dogecoin",
+        "original_symbol": "DOGE",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "DOGE-B67",
+        "total_supply": "1557500314.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Dolex",
+        "original_symbol": "DOLX",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "DOLX-15D",
+        "total_supply": "4850000000.00000000"
+    },
+    {
+        "contract_address": "0xDc0f0a5719c39764b011eDd02811BD228296887C",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "DOS Network Token",
+        "original_symbol": "DOS",
+        "owner": "bnb13gse9n7mvrjg5w2cymnt4nmxkgj200k9k2l2nh",
+        "symbol": "DOS-120",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "PolkadotBEP2",
+        "original_symbol": "DOT",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "DOT-64C",
+        "total_supply": "7500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "DREP",
+        "original_symbol": "DREP",
+        "owner": "bnb1ez5s9v4rcgsmhwr4fkrnlv6zwsukjnh4y754kn",
+        "symbol": "DREP-7D2",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Dusk Network",
+        "original_symbol": "DUSK",
+        "owner": "bnb1dfls6c8y39l7qq4gj2479wkehg85pt5m07y94g",
+        "symbol": "DUSK-45E",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Davido Social Token",
+        "original_symbol": "DVDO",
+        "owner": "bnb1ujvzeuft0ezf9fu4u0mk52t8mc7t8geyfkevms",
+        "symbol": "DVDO-509",
+        "total_supply": "10000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "eBoost",
+        "original_symbol": "EBST",
+        "owner": "bnb1pmdkvw6cquwylr46wcrl82xzmul0y2jpj5cwx7",
+        "symbol": "EBST-783",
+        "total_supply": "80838159.07000000"
+    },
+    {
+        "mintable": true,
+        "name": "Ormeus Ecosystem",
+        "original_symbol": "ECO",
+        "owner": "bnb1tr49nv08k828n2lqfw0vrgvwj7xtep5kg8wr4c",
+        "symbol": "ECO-083",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "EeoLanda",
+        "original_symbol": "EEO",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "EEO-32C",
+        "total_supply": "6679010224.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Energy Eco Token",
+        "original_symbol": "EET",
+        "owner": "bnb1pt353m8ygvvgy4f2ud9xx85tl7fqewkrksh6r5",
+        "symbol": "EET-45C",
+        "total_supply": "600000000.00000000"
+    },
+    {
+        "contract_address": "0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Elrond",
+        "original_symbol": "EGLD",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "EGLD-745",
+        "total_supply": "600000.00000000"
+    },
+    {
+        "contract_address": "0xa3f020a5C92e15be13CAF0Ee5C95cF79585EeCC9",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "ELFToken",
+        "original_symbol": "ELF",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "ELF-D72",
+        "total_supply": "2500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Hut34 Entropy",
+        "original_symbol": "ENTRP",
+        "owner": "bnb1wu0hu9pelx3yvplysx0je7d93htcandpj86aev",
+        "symbol": "ENTRP-C8D",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "contract_address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "EOS BEP2",
+        "original_symbol": "EOS",
+        "owner": "bnb1la8alalwjzkchd67wza3r75lj5rm7m9e85ffqr",
+        "symbol": "EOS-CDD",
+        "total_supply": "11590000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Short EOS Token",
+        "original_symbol": "EOSBEAR",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "EOSBEAR-721",
+        "total_supply": "32301.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Long EOS Token",
+        "original_symbol": "EOSBULL",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "EOSBULL-F0D",
+        "total_supply": "456191.00000000"
+    },
+    {
+        "contract_address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Ellipsis",
+        "original_symbol": "EPS",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "EPS-458",
+        "total_supply": "364404781.83342577"
+    },
+    {
+        "contract_address": "0x5C7e71f46e49Cf816f9863461EEB36e3bc8E3B51",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "EQUAL",
+        "original_symbol": "EQL",
+        "owner": "bnb1uz0s54rzv022dh66l7atwk83wqcet9qstgg358",
+        "symbol": "EQL-586",
+        "total_supply": "675259060.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Elrond",
+        "original_symbol": "ERD",
+        "owner": "bnb1m5uzzfxs7x05sl28gg96zyecn9jwgtkpyeftyn",
+        "symbol": "ERD-D06",
+        "total_supply": "127357499.62743049"
+    },
+    {
+        "mintable": false,
+        "name": "Eries",
+        "original_symbol": "ERIES",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "ERIES-9F5",
+        "total_supply": "75000000.00000000"
+    },
+    {
+        "contract_address": "0x3d6545b08693daE087E957cb1180ee38B9e3c25E",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Ethereum Classic",
+        "original_symbol": "ETC",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "ETC-758",
+        "total_supply": "1050000.00000000"
+    },
+    {
+        "contract_address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "ETH BEP2",
+        "original_symbol": "ETH",
+        "owner": "bnb1yss2345dphss8c823dh2jzje2w8k8x4jguuxhf",
+        "symbol": "ETH-1C9",
+        "total_supply": "185000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Short Ethereum Token",
+        "original_symbol": "ETHBEAR",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "ETHBEAR-B2B",
+        "total_supply": "78821.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Long Ethereum Token",
+        "original_symbol": "ETHBULL",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "ETHBULL-D33",
+        "total_supply": "33684.00000000"
+    },
+    {
+        "contract_address": "0x302cD8973bE5CA2334B4ff7e7b01BA41455559b3",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Ethereum PoW",
+        "original_symbol": "ETHW",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "ETHW-478",
+        "total_supply": "209142.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "everiToken",
+        "original_symbol": "EVT",
+        "owner": "bnb1v3fl4kuwuhzf3g7ghscsq7uzmu5dw50waseptd",
+        "symbol": "EVT-49B",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Exchange Token",
+        "original_symbol": "EXT",
+        "owner": "bnb1vyvexmj4udt67gk0c9hswvkm7lrcrsmcwnj2v6",
+        "symbol": "EXT-6A8",
+        "total_supply": "200000000.00000000"
+    },
+    {
+        "contract_address": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Filecoin",
+        "original_symbol": "FIL",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "FIL-E2C",
+        "total_supply": "310000.00000000"
+    },
+    {
+        "contract_address": "0x4e6415a5727ea08aAE4580057187923aeC331227",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Refinable",
+        "original_symbol": "FINE",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "FINE-74B",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "BaseFlyer",
+        "original_symbol": "FLYR",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "FLYR-514",
+        "total_supply": "450000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "The Force Token",
+        "original_symbol": "FOR",
+        "owner": "bnb1c46nhwdwm3u2mlfhx6t07fls25shnvktpr9w9m",
+        "symbol": "FOR-997",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Ferrum Network Token",
+        "original_symbol": "FRM",
+        "owner": "bnb1um8ntkgwle8yrdk0yn5hwdf7hckjpyjjg29k2p",
+        "symbol": "FRM-DE7",
+        "total_supply": "2709374.50000000"
+    },
+    {
+        "mintable": false,
+        "name": "Fusion",
+        "original_symbol": "FSN",
+        "owner": "bnb17mnutyduat9fe02r2dawp3kn4rnaqamp5kpg0c",
+        "symbol": "FSN-E14",
+        "total_supply": "57344000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Fantom",
+        "original_symbol": "FTM",
+        "owner": "bnb1f6sxnf3nhn9fcfwkuccrzvl2pgu3sq0m8pyjhw",
+        "symbol": "FTM-A64",
+        "total_supply": "70382716.99000000"
+    },
+    {
+        "mintable": true,
+        "name": "FTX Token",
+        "original_symbol": "FTT",
+        "owner": "bnb1msxdh7e7smpg68gxxhs0p3fhuj9tzhrxa4c2x2",
+        "symbol": "FTT-F11",
+        "total_supply": "10000000.00000000"
+    },
+    {
+        "contract_address": "0xE49b84771470A87F4D9544685ea0F0517933B2B4",
+        "contract_decimals": 8,
+        "mintable": true,
+        "name": "Givly Coin",
+        "original_symbol": "GIV",
+        "owner": "bnb13jzr6sqz72fl0edg2tpqp8tddyzvyt4su2490m",
+        "symbol": "GIV-94E",
+        "total_supply": "400000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "GoWithMi",
+        "original_symbol": "GMAT",
+        "owner": "bnb1yltla9mnk8999ygmjjn3kwmmz2zs94a9v20sca",
+        "symbol": "GMAT-FC8",
+        "total_supply": "14900000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Global Gaming",
+        "original_symbol": "GMNG",
+        "owner": "bnb1qe6zxqptfxw0kh38t8pg6c3qa527n2x2a87qvm",
+        "symbol": "GMNG-F3E",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaPropDown",
+        "original_symbol": "GPRPD",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GPRPD-C26",
+        "total_supply": "67000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaPropUp",
+        "original_symbol": "GPRPL",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GPRPL-AC0",
+        "total_supply": "6700000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Riglofinance",
+        "original_symbol": "GRG",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GRG-C15",
+        "total_supply": "600000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Graphbit",
+        "original_symbol": "GRGAR",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GRGAR-6C2",
+        "total_supply": "78787800.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaGlobe",
+        "original_symbol": "GRGB",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GRGB-9B9",
+        "total_supply": "634500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Graphone",
+        "original_symbol": "GRGP",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "GRGP-2EF",
+        "total_supply": "275600000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SPI Governance",
+        "original_symbol": "GSPI",
+        "owner": "bnb1g67vtj58kupp45709yju0ejqpqllr4hdrgmuf4",
+        "symbol": "GSPI-ADB",
+        "total_supply": "1000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "GTEX",
+        "original_symbol": "GTEX",
+        "owner": "bnb1nksrzfl24he9xtvdvpypsl6r5jnh5x2uf9s82z",
+        "symbol": "GTEX-71B",
+        "total_supply": "4000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Gifto",
+        "original_symbol": "GTO",
+        "owner": "bnb1lvp8k3zenlfp2pl2nyaf428xjgh385m258gzvq",
+        "symbol": "GTO-908",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "“Hermes",
+        "original_symbol": "HEC",
+        "owner": "bnb1dfyydqkmsv5m0rs0pa4uut2gwrcsahppktns2t",
+        "symbol": "HEC-1A9",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Honest",
+        "original_symbol": "HNST",
+        "owner": "bnb1k9fv2hz0w3l9v9z4g9samg3gtc7nc2xgyqw5u0",
+        "symbol": "HNST-3C9",
+        "total_supply": "400000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "HumanINT",
+        "original_symbol": "HUMNI",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "HUMNI-BE4",
+        "total_supply": "5278142836.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Hyperion Token",
+        "original_symbol": "HYN",
+        "owner": "bnb1q5cqecuy2g7syl8fssp9a7v2sjamtrzlr3pa0n",
+        "symbol": "HYN-F21",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Rupiah Token",
+        "original_symbol": "IDRTB",
+        "owner": "bnb1wc44duax6pygh23psx0u945skvs3eh7w59e4sp",
+        "symbol": "IDRTB-178",
+        "total_supply": "90000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "IKU",
+        "original_symbol": "IKU",
+        "owner": "bnb1f52tc9l0qg337qtgu4n024ayllc78wxpc5xhvd",
+        "symbol": "IKU-416",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "IMC",
+        "original_symbol": "IMC",
+        "owner": "bnb1shm09d53ecznya76merlf9jy59pkwa2lz89ggk",
+        "symbol": "IMC-C52",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "contract_address": "0xa2B726B1145A4773F68593CF171187d8EBe4d495",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Injective Protocol",
+        "original_symbol": "INJ",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "INJ-FAE",
+        "total_supply": "6500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "InterOps",
+        "original_symbol": "IOP",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "IOP-166",
+        "total_supply": "5820399920.00000000"
+    },
+    {
+        "contract_address": "0x9678E42ceBEb63F23197D726B29b1CB20d0064E5",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "IoTeXNetwork",
+        "original_symbol": "IOTX",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "IOTX-0ED",
+        "total_supply": "5500000.00000000"
+    },
+    {
+        "contract_address": "0x05C50a62b0b87bE1fFB1Cf3b77d9eDBa834ef6f7",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "IRIS Network",
+        "original_symbol": "IRIS",
+        "owner": "bnb1dcpm0jjj8el8g6ekr3mvjxa8kptgu4e5xzvqv8",
+        "symbol": "IRIS-D88",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "JDXUCoin",
+        "original_symbol": "JDXU",
+        "owner": "bnb1dwcsg0t86g7935zpxc054n97styzgdtnu2kzg6",
+        "symbol": "JDXU-706",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Juventus",
+        "original_symbol": "JUV",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "JUV-D0F",
+        "total_supply": "2000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "KardiaChain",
+        "original_symbol": "KAI",
+        "owner": "bnb1rwsn6dsug9xygvax7y07dkyl8k4drezfxwtp9k",
+        "symbol": "KAI-0C3",
+        "total_supply": "5000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Kambria Token",
+        "original_symbol": "KAT",
+        "owner": "bnb1l68n6equtr925lhnentyq54zfrzqyj45lg8uwj",
+        "symbol": "KAT-7BB",
+        "total_supply": "3700000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Kava BEP2 Token",
+        "original_symbol": "KAVA",
+        "owner": "bnb1uyekdn62yur9zuctzqyd9ckasfvqttjz9c33me",
+        "symbol": "KAVA-10C",
+        "total_supply": "271190.72181900"
+    },
+    {
+        "mintable": false,
+        "name": "Sessia Kicks",
+        "original_symbol": "KICKS",
+        "owner": "bnb130tmwjd3fc79eh6f5ezl2326ur8rqpsxeeq30x",
+        "symbol": "KICKS-162",
+        "total_supply": "5000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "KitPlay",
+        "original_symbol": "KIT",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "KIT-052",
+        "total_supply": "6745172300.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Lambda",
+        "original_symbol": "LAMB",
+        "owner": "bnb19vnwdjwthm9unxe9hxdxmgm6qw0d42d2lmcesw",
+        "symbol": "LAMB-46C",
+        "total_supply": "5000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Lend-Borrow-Asset",
+        "original_symbol": "LBA",
+        "owner": "bnb1m8r74hr532lfwtaf5e88cxeakd36ut0ufpd4yu",
+        "symbol": "LBA-340",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Lesti",
+        "original_symbol": "LESTI",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "LESTI-90B",
+        "total_supply": "6767675000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Lexicon",
+        "original_symbol": "LEXI",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "LEXI-F9B",
+        "total_supply": "55800000.00000000"
+    },
+    {
+        "contract_address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "LINKBEP2",
+        "original_symbol": "LINK",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "LINK-AAD",
+        "total_supply": "2500000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "LITION",
+        "original_symbol": "LIT",
+        "owner": "bnb1fhlxwqlwd7cm5fmurg0wmsaalshnp7lwu46nk9",
+        "symbol": "LIT-099",
+        "total_supply": "145061313.45061312"
+    },
+    {
+        "mintable": true,
+        "name": "Loki",
+        "original_symbol": "LOKI",
+        "owner": "bnb1j5sft8wp7tktjwauy30x79f3tqa53fycmgxxs0",
+        "symbol": "LOKI-6A9",
+        "total_supply": "3000000.00000000"
+    },
+    {
+        "contract_address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "LTC BEP2",
+        "original_symbol": "LTC",
+        "owner": "bnb1cn4sqm79wqmr8rey923r34cp2wrtyhlr9easpg",
+        "symbol": "LTC-F07",
+        "total_supply": "230000.00000000"
+    },
+    {
+        "contract_address": "0x857B222Fc79e1cBBf8Ca5f78CB133d1b7CF34BBd",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "LTO Network",
+        "original_symbol": "LTO",
+        "owner": "bnb1ac6p45m00pv36y9mu48e5xr73fyxke3zv2rhmq",
+        "symbol": "LTO-BDF",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "LYFE",
+        "original_symbol": "LYFE",
+        "owner": "bnb1k0779dltjkl6a05v5uq06zym62hcufzcqu6gq7",
+        "symbol": "LYFE-6AB",
+        "total_supply": "231250000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Matic Token",
+        "original_symbol": "MATIC",
+        "owner": "bnb1a6nkf3g7c2z0jcrqhp8c9upcwmme0y49qx58nz",
+        "symbol": "MATIC-84A",
+        "total_supply": "5251571.89600000"
+    },
+    {
+        "mintable": false,
+        "name": "MetaBalance",
+        "original_symbol": "MBALL",
+        "owner": "bnb1ydgyjcddzkx3guzcsdsn2dqur29l3rck886gqd",
+        "symbol": "MBALL-936",
+        "total_supply": "750000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Moviebloc",
+        "original_symbol": "MBL",
+        "owner": "bnb17p8rc0z5vlysff2wc7xehff464dm0v7nhl27xq",
+        "symbol": "MBL-2D2",
+        "total_supply": "30000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Mcashchain",
+        "original_symbol": "MCASH",
+        "owner": "bnb1q420q7qpyv7tghfp6aac7vnjq74dhkeutdhqsg",
+        "symbol": "MCASH-869",
+        "total_supply": "200000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Magic Cube Token",
+        "original_symbol": "MCC",
+        "owner": "bnb14nt79d6hzhjefkys2cgrc9nrzugdjwwtggfmu4",
+        "symbol": "MCC-33B",
+        "total_supply": "20000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MDAB",
+        "original_symbol": "MDAB",
+        "owner": "bnb1m3edd4q4nd3wxg9vm3xe8pnfnetu5yjmhtnrqz",
+        "symbol": "MDAB-D42",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x668DB7aa38eaC6B40c9D13dBE61361DC4c4611d1",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Measurable Data Token",
+        "original_symbol": "MDT",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "MDT-14A",
+        "total_supply": "200000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "MediBloc",
+        "original_symbol": "MEDB",
+        "owner": "bnb1za3ytyh55wprmn4ew8gat657lpjdzhafwrded3",
+        "symbol": "MEDB-87E",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MEET.ONE",
+        "original_symbol": "MEETONE",
+        "owner": "bnb1zquk6usn03xnnht6ws6p0h4ylgk8jkhch6c6ck",
+        "symbol": "MEETONE-031",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SyncFab Smart Manufacturing",
+        "original_symbol": "MFGB",
+        "owner": "bnb104qhlkx4fu6nvm32v4k7zzgtt4eqtyzvh9yq48",
+        "symbol": "MFGB-0A0",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "contract_address": "0x304aA6B8215eaF3EABB2149ffC842205676FCe36",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Mithril",
+        "original_symbol": "MITH",
+        "owner": "bnb15krsh6x2343qskf86cw0hazchl5pkfw53zllut",
+        "symbol": "MITH-C76",
+        "total_supply": "988855068.00409432"
+    },
+    {
+        "mintable": false,
+        "name": "Morpheus Infrastructure Token",
+        "original_symbol": "MITX",
+        "owner": "bnb17e2n869fp6zvdyfaqkq3tgfmj8pskq20mdaz7e",
+        "symbol": "MITX-CAA",
+        "total_supply": "400000000.00000000"
+    },
+    {
+        "contract_address": "0x5f0Da599BB2ccCfcf6Fdfd7D81743B6020864350",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Maker",
+        "original_symbol": "MKR",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "MKR-F04",
+        "total_supply": "6000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MetaBit",
+        "original_symbol": "MTBIT",
+        "owner": "bnb1ydgyjcddzkx3guzcsdsn2dqur29l3rck886gqd",
+        "symbol": "MTBIT-C44",
+        "total_supply": "450000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MultiVAC",
+        "original_symbol": "MTV",
+        "owner": "bnb18cjgqwpj2sxdxf7u84hgzh76cmqvthw7fgtr7z",
+        "symbol": "MTV-4C6",
+        "total_supply": "8000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Tixl",
+        "original_symbol": "MTXLT",
+        "owner": "bnb1pwcluc3a2lswrdd8v3uq43qrgfdl6kv2ahrz43",
+        "symbol": "MTXLT-286",
+        "total_supply": "104999.99869084"
+    },
+    {
+        "mintable": true,
+        "name": "Mass Vehicle Ledger",
+        "original_symbol": "MVL",
+        "owner": "bnb1mqdkp0ujngm58sus3fh5x9c0j59madqxej9q75",
+        "symbol": "MVL-7B0",
+        "total_supply": "8000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MetaXfer",
+        "original_symbol": "MXER",
+        "owner": "bnb1ydgyjcddzkx3guzcsdsn2dqur29l3rck886gqd",
+        "symbol": "MXER-32E",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Muzika",
+        "original_symbol": "MZK",
+        "owner": "bnb1dkqsj76yr6nlegs3433m3c59mm0j7vy72nn275",
+        "symbol": "MZK-2C7",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "NEARProtocol",
+        "original_symbol": "NEAR",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "NEAR-4FD",
+        "total_supply": "2050000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "NEWTON",
+        "original_symbol": "NEW",
+        "owner": "bnb1ud4ak7pj5kg5kqddhx9yacdu6sf7sxhqdv30k0",
+        "symbol": "NEW-09E",
+        "total_supply": "90000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Nexo",
+        "original_symbol": "NEXO",
+        "owner": "bnb15ngukylwcleljegx32ykefqxw8jz42szar6vf5",
+        "symbol": "NEXO-A84",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "NODE",
+        "original_symbol": "NODE",
+        "owner": "bnb1xljnjk7msm5t5lwp4zv2ua80rrxzn2s2afce4j",
+        "symbol": "NODE-F3A",
+        "total_supply": "2000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "NOIZ Token",
+        "original_symbol": "NOIZB",
+        "owner": "bnb1fa9xgszkn57zq0aulfgk5hct09yx5heepum3x7",
+        "symbol": "NOIZB-878",
+        "total_supply": "400000000.00000000"
+    },
+    {
+        "contract_address": "0x02533c1e9AbBAfE5816ed8B27c0D22a8731075E0",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "NOW Token",
+        "original_symbol": "NOW",
+        "owner": "bnb1nug8ls9f0et0t558m4chmm46mf85ehpq0u8gwv",
+        "symbol": "NOW-E68",
+        "total_supply": "99939495.70000000"
+    },
+    {
+        "contract_address": "0xd8CB4C2369db13C94c90C7fD3bEbc9757900Ee6b",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "NPX Binance token",
+        "original_symbol": "NPXB",
+        "owner": "bnb1wf7z3e8wvcu7gs74stmfmktsa2m5738rd0znae",
+        "symbol": "NPXB-1E8",
+        "total_supply": "29800000.00000000"
+    },
+    {
+        "contract_address": "0xFb1f2FeB4A48087D25FDF13Cc98272F3Efca0939",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Pundi X NEM",
+        "original_symbol": "NPXSXEM",
+        "owner": "bnb1wuww3cqy6wn5jdp6emv0eqwd5khlc3qyy0ympp",
+        "symbol": "NPXSXEM-89C",
+        "total_supply": "44748244753.68000000"
+    },
+    {
+        "mintable": true,
+        "name": "Harmony.One",
+        "original_symbol": "ONE",
+        "owner": "bnb1a03uvqmnqzl85csnxnsx2xy28m76gkkht46f2l",
+        "symbol": "ONE-5F9",
+        "total_supply": "12600000000.00000000"
+    },
+    {
+        "contract_address": "0xFd7B3A77848f1C2D67E05E54d78d174a0C850335",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "ONTBEP2",
+        "original_symbol": "ONT",
+        "owner": "bnb1lxlxzanvg5ud02vjcvuxqrdystcehvtj6a05s2",
+        "symbol": "ONT-33D",
+        "total_supply": "15000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "OpenWeb Token",
+        "original_symbol": "OWTX",
+        "owner": "bnb1qnzqrxpek5dy6hh4fjywjv60x806yv2kpwt64y",
+        "symbol": "OWTX-A6B",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "PaleoAsset",
+        "original_symbol": "PALEO",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PALEO-D1B",
+        "total_supply": "35000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "PromALQI",
+        "original_symbol": "PALQI",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PALQI-063",
+        "total_supply": "40000000.00000000"
+    },
+    {
+        "contract_address": "0xb7F8Cd00C5A06c0537E2aBfF0b58033d02e5E094",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Paxos Standard",
+        "original_symbol": "PAX",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "PAX-F25",
+        "total_supply": "5999069.00000000"
+    },
+    {
+        "contract_address": "0x7950865a9140cB519342433146Ed5b40c6F210f7",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "PAX Gold",
+        "original_symbol": "PAXG",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "PAXG-9B2",
+        "total_supply": "250.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Pink Care Token",
+        "original_symbol": "PCAT",
+        "owner": "bnb1xx54pavpran2c36ugvnxnrfszwn36cryqfzufa",
+        "symbol": "PCAT-4BB",
+        "total_supply": "50000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ProdFolio",
+        "original_symbol": "PFIO",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PFIO-7D0",
+        "total_supply": "452900000.00000000"
+    },
+    {
+        "contract_address": "0xDff88A0A43271344B760b58a35076bf05524195c",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Red Pulse Phoenix Binance",
+        "original_symbol": "PHB",
+        "owner": "bnb1k55cwa5agrrd8ajfjmqqwjyf5uen42uvrkffw0",
+        "symbol": "PHB-2DF",
+        "total_supply": "3374307751.04531955"
+    },
+    {
+        "mintable": true,
+        "name": "PathHive Network",
+        "original_symbol": "PHV",
+        "owner": "bnb13nltf0vw66kw737dej6kc0fy85u3a38avr0xmf",
+        "symbol": "PHV-4A1",
+        "total_supply": "350000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "PCHAIN Token",
+        "original_symbol": "PIBNB",
+        "owner": "bnb1lvq8c3ul472aqrsknnvqumjszt2v60s0zagw6r",
+        "symbol": "PIBNB-43C",
+        "total_supply": "1071000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Pledge Coin",
+        "original_symbol": "PLG",
+        "owner": "bnb1wjxhqa6ud4ucxayjqd9necfq0n954ztncsn7zn",
+        "symbol": "PLG-D8D",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "PlumTerra",
+        "original_symbol": "PLMT",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "PLMT-CB5",
+        "total_supply": "88572033410.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ProdBlock",
+        "original_symbol": "POPB",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "POPB-400",
+        "total_supply": "640000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "PPE Token",
+        "original_symbol": "PPE",
+        "owner": "bnb1ry96fn3gl3wskha86lhgx8ckrgt3vgrnwq8quz",
+        "symbol": "PPE-942",
+        "total_supply": "200000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ProdEmblem",
+        "original_symbol": "PREBM",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PREBM-054",
+        "total_supply": "900000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ProdGovernance",
+        "original_symbol": "PRGOV",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PRGOV-842",
+        "total_supply": "850000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Prometeus",
+        "original_symbol": "PROM",
+        "owner": "bnb1kzkhxqgqgneyajv9ejgjpseve6j9wzga7vewme",
+        "symbol": "PROM-BB3",
+        "total_supply": "20000000.00000000"
+    },
+    {
+        "contract_address": "0x9B44Df3318972bE845d83f961735609137C4C23c",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Propel",
+        "original_symbol": "PROPEL",
+        "owner": "bnb1ujppwvhcr87unkwhp3tfvlvs2vdd8wp6ghllq7",
+        "symbol": "PROPEL-6D9",
+        "total_supply": "8000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Proteus",
+        "original_symbol": "PRTUS",
+        "owner": "bnb1mh2qf55jnmcng5zdw0j0r3cu2afg8ykt7kk45f",
+        "symbol": "PRTUS-95B",
+        "total_supply": "85000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "ParisSaintGermain",
+        "original_symbol": "PSG",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "PSG-CEE",
+        "total_supply": "2000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Pivot Token",
+        "original_symbol": "PVT",
+        "owner": "bnb1vgzzktw8j46hd87npsrukxhzxecq8knnt96tyf",
+        "symbol": "PVT-554",
+        "total_supply": "6283185307.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "paycentos",
+        "original_symbol": "PYN",
+        "owner": "bnb190acfwshh899eylweut9xarls2ma953rvkdlhf",
+        "symbol": "PYN-C37",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "QARK",
+        "original_symbol": "QARK",
+        "owner": "bnb1wnwrnmc6y9pl6ve9g7mahd4wkactaldyx3hsmu",
+        "symbol": "QARK-FCE",
+        "total_supply": "77000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "QuantBloc",
+        "original_symbol": "QBC",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "QBC-ADA",
+        "total_supply": "5000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "qiibeeToken",
+        "original_symbol": "QBX",
+        "owner": "bnb1eq8cytar7a3rer3ms7dpatd3cuhpfhaw3ts6tr",
+        "symbol": "QBX-38C",
+        "total_supply": "7310391.81280380"
+    },
+    {
+        "contract_address": "0xcD7C5025753a49f1881B31C48caA7C517Bb46308",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Raven Protocol",
+        "original_symbol": "RAVEN",
+        "owner": "bnb1vdjhrkgvt4y76ykyvrvh68pzqg3lvv0y5yfxyf",
+        "symbol": "RAVEN-F66",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RBFE",
+        "original_symbol": "RBFE",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RBFE-089",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ReefBasket",
+        "original_symbol": "RBKT",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RBKT-AB3",
+        "total_supply": "680000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaFin",
+        "original_symbol": "RBLOC",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "RBLOC-F9A",
+        "total_supply": "620561000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "REFV",
+        "original_symbol": "REFV",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "REFV-058",
+        "total_supply": "125000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaBlocStake",
+        "original_symbol": "RGBST",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "RGBST-101",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigaBlocIndex",
+        "original_symbol": "RGBUI",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "RGBUI-AB0",
+        "total_supply": "130000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RigloMine",
+        "original_symbol": "RGMIN",
+        "owner": "bnb1yzha8ere79aezulwmd4apypnjn2xpvlvn86wp0",
+        "symbol": "RGMIN-457",
+        "total_supply": "800000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Reporter News Agency Token",
+        "original_symbol": "RNA",
+        "owner": "bnb1m033d9a5fuf6r8wxqcguhwrnnk7sffcljzrc83",
+        "symbol": "RNA-23B",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x92A0d359C87b8F3fe383AA0a42C19D1A2aFE6Be0",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Earneo",
+        "original_symbol": "RNO",
+        "owner": "bnb15y9tzj56fu8gz36vlel7rta8rlfrz4ejattt9x",
+        "symbol": "RNO-14E",
+        "total_supply": "650000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RNOP",
+        "original_symbol": "RNOP",
+        "owner": "bnb1nt6acteek690dnnn5ylcw0y0gk6syprcvr2zf6",
+        "symbol": "RNOP-7A3",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Revnset",
+        "original_symbol": "RNSC",
+        "owner": "bnb1nt6acteek690dnnn5ylcw0y0gk6syprcvr2zf6",
+        "symbol": "RNSC-EC1",
+        "total_supply": "65000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Rasputin Party Mansion Phase2",
+        "original_symbol": "ROCP2",
+        "owner": "bnb16fyhf2hw8d5raxtympp48nzt2ezw6dqvfv5cd3",
+        "symbol": "ROCP2-F01",
+        "total_supply": "27000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Rapids",
+        "original_symbol": "RPD",
+        "owner": "bnb1vtpy8dly2jfsn6v3t0qnyfxrex9sdy0entp5zs",
+        "symbol": "RPD-9E0",
+        "total_supply": "1500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RPTEX",
+        "original_symbol": "RPTEX",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RPTEX-91F",
+        "total_supply": "600000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ReefPlay",
+        "original_symbol": "RPTLB",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RPTLB-80A",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RPTP",
+        "original_symbol": "RPTP",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RPTP-B2C",
+        "total_supply": "8500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RPTPOK",
+        "original_symbol": "RPTPO",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RPTPO-518",
+        "total_supply": "457800000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RPTT",
+        "original_symbol": "RPTT",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RPTT-B83",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "RTGE",
+        "original_symbol": "RTGE",
+        "owner": "bnb1d9eyq0cpufr4pnmvak3edlh0atz9tn5g5uq36r",
+        "symbol": "RTGE-715",
+        "total_supply": "99999999.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Other Rune",
+        "original_symbol": "RUNE",
+        "owner": "bnb1y77m5ms3y4mwk7tt20ywrl9vfnpnf4nepp7jh5",
+        "symbol": "RUNE-67C",
+        "total_supply": "89999999.99970297"
+    },
+    {
+        "mintable": false,
+        "name": "Rune",
+        "original_symbol": "RUNE",
+        "owner": "bnb1e4q8whcufp6d72w8nwmpuhxd96r4n0fstegyuy",
+        "symbol": "RUNE-B1A",
+        "total_supply": "14386357.16307849"
+    },
+    {
+        "mintable": false,
+        "name": "RVIDPay",
+        "original_symbol": "RVID",
+        "owner": "bnb1nt6acteek690dnnn5ylcw0y0gk6syprcvr2zf6",
+        "symbol": "RVID-807",
+        "total_supply": "90000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "SB Token",
+        "original_symbol": "SBC",
+        "owner": "bnb19sh5vk98jczgkakqcg9uzyyutx79rczj38t36h",
+        "symbol": "SBC-5D4",
+        "total_supply": "1500000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "SocialCripto",
+        "original_symbol": "SCK",
+        "owner": "bnb1874fyrpzpzyqpnnaqnywmaxqvy5xf5j9tq3z7j",
+        "symbol": "SCK-268",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "MESEFA",
+        "original_symbol": "SEFA",
+        "owner": "bnb1g7nh4c0zvwynxslrr69l8pqlyr8hxtulxlj3yl",
+        "symbol": "SEFA-253",
+        "total_supply": "963000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Sentas",
+        "original_symbol": "SENTA",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "SENTA-C44",
+        "total_supply": "567290000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SENTA",
+        "original_symbol": "SENTA",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "SENTA-CA3",
+        "total_supply": "60000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Setoken",
+        "original_symbol": "SETSU",
+        "owner": "bnb1t96fna9ku2hk2vnue9zccenm0368j9ptpk9k07",
+        "symbol": "SETSU-559",
+        "total_supply": "800000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Shekkel",
+        "original_symbol": "SHE",
+        "owner": "bnb1hndnrcfha5s5l7f3nu88s0qqwytffrh3j8ud8z",
+        "symbol": "SHE-0FA",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x5fb4968fC85868DF3aD2d6e59883a10570f01D18",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "ShareToken",
+        "original_symbol": "SHR",
+        "owner": "bnb12c94hfu5vm77a9xkwfyl2ztgwgk503a06zl70e",
+        "symbol": "SHR-DB6",
+        "total_supply": "4396000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SimBits",
+        "original_symbol": "SIMT",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "SIMT-E65",
+        "total_supply": "42103955078.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Silverway",
+        "original_symbol": "SLV",
+        "owner": "bnb15nhdv2m09uwgnmmhx73dcguag7n363fdzdsg23",
+        "symbol": "SLV-986",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SendDATA",
+        "original_symbol": "SNDD",
+        "owner": "bnb1nt6acteek690dnnn5ylcw0y0gk6syprcvr2zf6",
+        "symbol": "SNDD-384",
+        "total_supply": "90000000.00000000"
+    },
+    {
+        "contract_address": "0x9Ac983826058b8a9C7Aa1C9171441191232E8404",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "SynthetixNetworkToken",
+        "original_symbol": "SNX",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "SNX-C26",
+        "total_supply": "800000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Solenium",
+        "original_symbol": "SOLEN",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "SOLEN-263",
+        "total_supply": "700000000.00000000"
+    },
+    {
+        "contract_address": "0xE4Ae305ebE1AbE663f261Bc00534067C80ad677C",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "SPARTAN PROTOCOL TOKEN",
+        "original_symbol": "SPARTA",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "SPARTA-7F3",
+        "total_supply": "63431685.84370838"
+    },
+    {
+        "mintable": true,
+        "name": "SPIN Protocol",
+        "original_symbol": "SPIN",
+        "owner": "bnb12n8fqjp8vh00s5u89paewv0wk8avr3nyvhsl4j",
+        "symbol": "SPIN-9DD",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Spendcoin",
+        "original_symbol": "SPNDB",
+        "owner": "bnb105n32ugq55kzlyz3tuug35d3t0ul37lx9aksah",
+        "symbol": "SPNDB-916",
+        "total_supply": "595786939.82994510"
+    },
+    {
+        "mintable": false,
+        "name": "SpoolToken",
+        "original_symbol": "SPOOL",
+        "owner": "bnb1t96fna9ku2hk2vnue9zccenm0368j9ptpk9k07",
+        "symbol": "SPOOL-1F0",
+        "total_supply": "950000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SpectrumBLOC",
+        "original_symbol": "SPTIX",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "SPTIX-826",
+        "total_supply": "87000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "STIPS Token",
+        "original_symbol": "STIPS",
+        "owner": "bnb1tug8sgfcuh0rdyr697k5pnwz9expj7v5zr3qs5",
+        "symbol": "STIPS-14F",
+        "total_supply": "128806335.86000000"
+    },
+    {
+        "mintable": false,
+        "name": "STIPS",
+        "original_symbol": "STIPS",
+        "owner": "bnb1tug8sgfcuh0rdyr697k5pnwz9expj7v5zr3qs5",
+        "symbol": "STIPS-770",
+        "total_supply": "243585434.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Yin Lang Music IP Token",
+        "original_symbol": "STYL",
+        "owner": "bnb1j2dgknw9l4jny8crjdn6vcjsnu23ejxhchrumg",
+        "symbol": "STYL-65B",
+        "total_supply": "100000.00000000"
+    },
+    {
+        "contract_address": "0x947950BcC74888a40Ffa2593C5798F11Fc9124C4",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "SushiToken",
+        "original_symbol": "SUSHI",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "SUSHI-134",
+        "total_supply": "4000000.00000000"
+    },
+    {
+        "contract_address": "0x71DE20e0C4616E7fcBfDD3f875d568492cBE4739",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Swingby Token",
+        "original_symbol": "SWINGBY",
+        "owner": "bnb1thagrtfude74x2j2wuknhj2savucy2tx0k58y9",
+        "symbol": "SWINGBY-888",
+        "total_supply": "889788091.43231651"
+    },
+    {
+        "mintable": false,
+        "name": "SWIPE Token",
+        "original_symbol": "SWIPE.B",
+        "owner": "bnb17pwyw202w7fssznnnv8f2gukau49uc4m4chz4m",
+        "symbol": "SWIPE.B-DC0",
+        "total_supply": "1500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SwapZilla",
+        "original_symbol": "SWZL",
+        "owner": "bnb1la4nwu5r8cc3v23upmuzs990waa7dkzpycmzzl",
+        "symbol": "SWZL-E0C",
+        "total_supply": "30000000.00000000"
+    },
+    {
+        "contract_address": "0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Swipe",
+        "original_symbol": "SXP",
+        "owner": "bnb1mxskfqczkg3zp55uns6lwa2v7fvjpnsu99z75r",
+        "symbol": "SXP-CCC",
+        "total_supply": "285368788.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "SyndraDB",
+        "original_symbol": "SYNDA",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "SYNDA-4FA",
+        "total_supply": "458340000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TrueAUD",
+        "original_symbol": "TAUDB",
+        "owner": "bnb100dxzy02a6k7vysc5g4kk4fqamr7jhjg4m83l0",
+        "symbol": "TAUDB-888",
+        "total_supply": "8112.52000000"
+    },
+    {
+        "mintable": true,
+        "name": "TBCC Coin",
+        "original_symbol": "TBC",
+        "owner": "bnb18hvknjyd73dx3ud02zp3z8v6du50vw7jxp06xt",
+        "symbol": "TBC-3A7",
+        "total_supply": "55166204.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TrueCAD",
+        "original_symbol": "TCADB",
+        "owner": "bnb100dxzy02a6k7vysc5g4kk4fqamr7jhjg4m83l0",
+        "symbol": "TCADB-888",
+        "total_supply": "501.00000000"
+    },
+    {
+        "contract_address": "0xCA0a9Df6a8cAD800046C1DDc5755810718b65C44",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "TokenClub",
+        "original_symbol": "TCT",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "TCT-826",
+        "total_supply": "12791112.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TrustED Token",
+        "original_symbol": "TED",
+        "owner": "bnb1zwg63xvmn02u8lv8v2sq0ypaejehhv3fceeu8a",
+        "symbol": "TED-A85",
+        "total_supply": "1720000000.00000000"
+    },
+    {
+        "contract_address": "0x39c0308fB2221Ff4c3485C2817fF126Bfb9726f6",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Test token",
+        "original_symbol": "TEST",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "TEST-825",
+        "total_supply": "100006000.00000000"
+    },
+    {
+        "contract_address": "0x5BF7CF80f53083cdcb5e651Ae367B4449826E0B9",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Test PancakeSwap Token",
+        "original_symbol": "TESTCAKE",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "TESTCAKE-951",
+        "total_supply": "203235108.83054930"
+    },
+    {
+        "mintable": true,
+        "name": "TrueGBP",
+        "original_symbol": "TGBPB",
+        "owner": "bnb100dxzy02a6k7vysc5g4kk4fqamr7jhjg4m83l0",
+        "symbol": "TGBPB-888",
+        "total_supply": "1294.69000000"
+    },
+    {
+        "mintable": false,
+        "name": "Datagregator",
+        "original_symbol": "TGEBI",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "TGEBI-61C",
+        "total_supply": "60000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TrueHKD",
+        "original_symbol": "THKDB",
+        "owner": "bnb100dxzy02a6k7vysc5g4kk4fqamr7jhjg4m83l0",
+        "symbol": "THKDB-888",
+        "total_supply": "183467.69000000"
+    },
+    {
+        "contract_address": "0x9f589e3eabe42ebC94A44727b3f3531C0c877809",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Tokocrypto Token",
+        "original_symbol": "TKO",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "TKO-DF1",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Traxia 2",
+        "original_symbol": "TM2",
+        "owner": "bnb1pdeggk7lgch37ks7e3l5x3n5y245krl3zmrl8e",
+        "symbol": "TM2-0C4",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Temco",
+        "original_symbol": "TMCO",
+        "owner": "bnb1n24x7jen28uaqr5r7nlmt8gx9qq59wsd9mun84",
+        "symbol": "TMCO-88A",
+        "total_supply": "85000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TMPO",
+        "original_symbol": "TMPO",
+        "owner": "bnb16p59mlphqpq7kyl6j0dxk46yrvsujuqazd55s4",
+        "symbol": "TMPO-449",
+        "total_supply": "98500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TemSoar",
+        "original_symbol": "TMSR",
+        "owner": "bnb1n24x7jen28uaqr5r7nlmt8gx9qq59wsd9mun84",
+        "symbol": "TMSR-B34",
+        "total_supply": "345000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TomoChain",
+        "original_symbol": "TOMOB",
+        "owner": "bnb1jmgew0xvtkfjhnqsglm50tynxgps3xkx0xqffy",
+        "symbol": "TOMOB-4BC",
+        "total_supply": "5000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TOP Network",
+        "original_symbol": "TOP",
+        "owner": "bnb1lqc7vjrag9sdaqeuv22jccr4rxtdxdtq6ve2w6",
+        "symbol": "TOP-491",
+        "total_supply": "20000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TemcoIndex",
+        "original_symbol": "TREI",
+        "owner": "bnb1n24x7jen28uaqr5r7nlmt8gx9qq59wsd9mun84",
+        "symbol": "TREI-477",
+        "total_supply": "500000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TemReturn",
+        "original_symbol": "TRET",
+        "owner": "bnb1n24x7jen28uaqr5r7nlmt8gx9qq59wsd9mun84",
+        "symbol": "TRET-805",
+        "total_supply": "85000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TROY",
+        "original_symbol": "TROY",
+        "owner": "bnb1scrark2sv6fpngyqxrryw9hw7y05euwntz45ae",
+        "symbol": "TROY-9B8",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "TrueChain",
+        "original_symbol": "TRUE",
+        "owner": "bnb1m0llwxe0nwtw98m7knpz3g7r0c98mwn7tfwjcc",
+        "symbol": "TRUE-D84",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TRXB",
+        "original_symbol": "TRXB",
+        "owner": "bnb1srm577fgsjg363vsqt8td4tat5arzfvkjchqgq",
+        "symbol": "TRXB-2E6",
+        "total_supply": "26178558.27000000"
+    },
+    {
+        "mintable": false,
+        "name": "TemSDA",
+        "original_symbol": "TSDA",
+        "owner": "bnb1n24x7jen28uaqr5r7nlmt8gx9qq59wsd9mun84",
+        "symbol": "TSDA-FE5",
+        "total_supply": "120000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Test Integration",
+        "original_symbol": "TSTINTG",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "TSTINTG-155",
+        "total_supply": "2000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Tunworld",
+        "original_symbol": "TUN",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "TUN-058",
+        "total_supply": "51802177260.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "TrueUSD",
+        "original_symbol": "TUSDB",
+        "owner": "bnb19sp7a7zljrnptvf8x3mxqtxkxpsd90futnfqa0",
+        "symbol": "TUSDB-888",
+        "total_supply": "85470.42625064"
+    },
+    {
+        "contract_address": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Trust Wallet",
+        "original_symbol": "TWT",
+        "owner": "bnb1fkyxlq9kz5368ux29aeeztslclgf8e7tja345x",
+        "symbol": "TWT-8C2",
+        "total_supply": "999415184.91209999"
+    },
+    {
+        "mintable": false,
+        "name": "UAtlas",
+        "original_symbol": "UATLA",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "UATLA-8B9",
+        "total_supply": "80500000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "“Ubet",
+        "original_symbol": "UBETS",
+        "owner": "bnb1gcpctmgmf0am0ft85ttswy2epd9d6vvvxu2ly6",
+        "symbol": "UBETS-068",
+        "total_supply": "4000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UniversalQC",
+        "original_symbol": "UCOQ",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "UCOQ-087",
+        "total_supply": "50000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Ultrain Coin",
+        "original_symbol": "UGAS",
+        "owner": "bnb1mj2nncwkmrw9pr6d0spkfmewz5eynz63w67f6e",
+        "symbol": "UGAS-B0C",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "United Network Distribution",
+        "original_symbol": "UND",
+        "owner": "bnb1q5tr6ggvg0h38axzw2dc4606j3edg58qug9ajr",
+        "symbol": "UND-EBC",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0xA7cA04F7602cD7A939d3E4827F442f48cF8E9daD",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Uniswap Finance",
+        "original_symbol": "UNFI",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "UNFI-FB7",
+        "total_supply": "10000000.00000000"
+    },
+    {
+        "contract_address": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Uniswap",
+        "original_symbol": "UNI",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "UNI-DD8",
+        "total_supply": "3000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UPX",
+        "original_symbol": "UPX",
+        "owner": "bnb1588jx9ylvfpfhdzy672lk3pulleq8md0a4wcjl",
+        "symbol": "UPX-F3E",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "contract_address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "USD Coin",
+        "original_symbol": "USDC",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "USDC-CD2",
+        "total_supply": "14000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "HonestCoin",
+        "original_symbol": "USDH",
+        "owner": "bnb1kel6x8nl37j2w6963c3gxnwzplvkwkphrkdmx9",
+        "symbol": "USDH-5B5",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "USDS",
+        "original_symbol": "USDSB",
+        "owner": "bnb1nf5qjthrmxwxnfct4j0w4ct03fghthq24qt990",
+        "symbol": "USDSB-1AC",
+        "total_supply": "90000000000.00000000"
+    },
+    {
+        "contract_address": "0x55d398326f99059fF775485246999027B3197955",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "USDTBEP2",
+        "original_symbol": "USDT",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "USDT-6D8",
+        "total_supply": "84999787.41230200"
+    },
+    {
+        "contract_address": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Wrapped UST Token",
+        "original_symbol": "UST",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "UST-290",
+        "total_supply": "36865249.12122696"
+    },
+    {
+        "mintable": false,
+        "name": "UTelYet",
+        "original_symbol": "UTEY",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "UTEY-3C5",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UTU Coin",
+        "original_symbol": "UTU",
+        "owner": "bnb1r7whkqt8q2efn3c2ynsshrvxkg07cu8etuxkwr",
+        "symbol": "UTU-159",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UniversalBI",
+        "original_symbol": "UUBI",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "UUBI-E6F",
+        "total_supply": "654500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UNetwork Token",
+        "original_symbol": "UUU",
+        "owner": "bnb17mkwwvzxaxa792rggvcmrpe6d7la4j9tjhdaql",
+        "symbol": "UUU-35C",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "UWEAL",
+        "original_symbol": "UWEAL",
+        "owner": "bnb17cjs977mn24tyrtpdjr4wnsgea98lw8ppluf6v",
+        "symbol": "UWEAL-87C",
+        "total_supply": "52380000.00000000"
+    },
+    {
+        "contract_address": "0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "VAI Stablecoin",
+        "original_symbol": "VAI",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "VAI-B2D",
+        "total_supply": "98858560.91210938"
+    },
+    {
+        "mintable": true,
+        "name": "Vodi X",
+        "original_symbol": "VDX",
+        "owner": "bnb1pk6umuhxjcd3ggyztw7a7lfggwgyyx2w5h8j59",
+        "symbol": "VDX-A17",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "V-ID Token",
+        "original_symbol": "VIDT",
+        "owner": "bnb1k8870xayp29jug2lw9ujcqnjv6q6nu92enkg8v",
+        "symbol": "VIDT-F53",
+        "total_supply": "120000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "VNDC",
+        "original_symbol": "VNDC",
+        "owner": "bnb1zxt4xh4xxdnv5aagh77a4zp2kflg6a2c22hp73",
+        "symbol": "VNDC-DB9",
+        "total_supply": "2050000000.00000000"
+    },
+    {
+        "contract_address": "0x6B574beb42bFa9701Ab383fAF0EE02CDBEca3Ea5",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "Vote",
+        "original_symbol": "VOTE",
+        "owner": "bnb1px34z7hw3hjtcf4ul664azxl4jwmkvgdnfep5e",
+        "symbol": "VOTE-FD4",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "VERA",
+        "original_symbol": "VRAB",
+        "owner": "bnb1ucrwnsvjetufca3u6hnqskz0jfrwascwzg5tyf",
+        "symbol": "VRAB-B56",
+        "total_supply": "10739985784.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Wagerr",
+        "original_symbol": "WGR",
+        "owner": "bnb194yuu322fqk69g2el8c874np5hjc8fykft3wv3",
+        "symbol": "WGR-D3D",
+        "total_supply": "205000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "WaykiChain Coin",
+        "original_symbol": "WICC",
+        "owner": "bnb1cw6kw5q0xcaxvpqravfewrcca9jgkdmd3zpc5n",
+        "symbol": "WICC-01D",
+        "total_supply": "210000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "WINB",
+        "original_symbol": "WINB",
+        "owner": "bnb1srm577fgsjg363vsqt8td4tat5arzfvkjchqgq",
+        "symbol": "WINB-41F",
+        "total_supply": "707173166.03000000"
+    },
+    {
+        "mintable": false,
+        "name": "MyWish",
+        "original_symbol": "WISH",
+        "owner": "bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk",
+        "symbol": "WISH-2D5",
+        "total_supply": "9546650.62357825"
+    },
+    {
+        "contract_address": "0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
+        "contract_decimals": 8,
+        "mintable": true,
+        "name": "Wrapped Navcoin",
+        "original_symbol": "WNAV",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "WNAV-D49",
+        "total_supply": "5894811.59452729"
+    },
+    {
+        "mintable": false,
+        "name": "WOONKLY",
+        "original_symbol": "WOOPX",
+        "owner": "bnb16ke3clwqmduvzv6awlprjw3ecw7g52qwsdnnd2",
+        "symbol": "WOOPX-9C4",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x2a459DD33f05Ed8EA9584505Cf04698BE5654e6d",
+        "contract_decimals": 18,
+        "mintable": false,
+        "name": "WazirX Token",
+        "original_symbol": "WRX",
+        "owner": "bnb19cvhgyrxmkw30hlqs9c5lp966drjzyylytl74z",
+        "symbol": "WRX-ED1",
+        "total_supply": "962646668.99000000"
+    },
+    {
+        "mintable": false,
+        "name": "Eterbase Coin",
+        "original_symbol": "XBASE",
+        "owner": "bnb177v0mn59lmuxu90uph5mg065n9l4f3r4zqllvd",
+        "symbol": "XBASE-CD2",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "XIO",
+        "original_symbol": "XIO",
+        "owner": "bnb1egwrlcwqkluqpujfwc5r2d27ggg7kv0lteyez9",
+        "symbol": "XIO-B05",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "Xeonbit Token",
+        "original_symbol": "XNS",
+        "owner": "bnb17az2n3ll3wjgf3gnn2chqxawzgrv9xv9vrkc79",
+        "symbol": "XNS-760",
+        "total_supply": "300000000.00000000"
+    },
+    {
+        "contract_address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "XRP BEP2",
+        "original_symbol": "XRP",
+        "owner": "bnb1x0vv5l6u5c7vpl7c947uxmm0gfstpdhg93gxpt",
+        "symbol": "XRP-BF2",
+        "total_supply": "100800000.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Short XRP Token",
+        "original_symbol": "XRPBEAR",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "XRPBEAR-00B",
+        "total_supply": "1348.00000000"
+    },
+    {
+        "mintable": true,
+        "name": "3X Long XRP Token",
+        "original_symbol": "XRPBULL",
+        "owner": "bnb1ff4r0t7j8ll8lf3gm2ltdu3hjy4w690j7vvees",
+        "symbol": "XRPBULL-E7C",
+        "total_supply": "121291.00000000"
+    },
+    {
+        "contract_address": "0x16939ef78684453bfDFb47825F8a5F714f12623a",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "XTZ BEP2",
+        "original_symbol": "XTZ",
+        "owner": "bnb12twkcedchmx3xn09jcf28u7xrg0mqsyluf56g4",
+        "symbol": "XTZ-F7A",
+        "total_supply": "4000000.00000000"
+    },
+    {
+        "contract_address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "Venus",
+        "original_symbol": "XVS",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "XVS-795",
+        "total_supply": "30000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "XWG",
+        "original_symbol": "XWG",
+        "owner": "bnb10s02g69vhym56ke23nkacmuf9038e8rr7dm8e8",
+        "symbol": "XWG-478",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "“YeeCo”",
+        "original_symbol": "YEE",
+        "owner": "bnb1ykzzc0zevzsade3urq4t27rfz98xgquphm8ucs",
+        "symbol": "YEE-EAE",
+        "total_supply": "10000000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Yelumium",
+        "original_symbol": "YELUM",
+        "owner": "bnb1vqjqwtxdmjrelz6w70ng0tmr7fz9etm8qw04zk",
+        "symbol": "YELUM-0B7",
+        "total_supply": "90000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "YetiGames",
+        "original_symbol": "YETI",
+        "owner": "bnb13yker5mlx8tgkutfqatuh56qmka0qk98xxudjk",
+        "symbol": "YETI-3F7",
+        "total_supply": "57192559012.00000000"
+    },
+    {
+        "contract_address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "yearnfinance",
+        "original_symbol": "YFI",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "YFI-1A4",
+        "total_supply": "600.00000000"
+    },
+    {
+        "contract_address": "0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "YFIIBEP2",
+        "original_symbol": "YFII",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "YFII-061",
+        "total_supply": "1253.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZedPalladium",
+        "original_symbol": "ZDPB",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZDPB-C37",
+        "total_supply": "60000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZEBI",
+        "original_symbol": "ZEBI",
+        "owner": "bnb1gca96lw9zlr8fct47wznsae67pc5wjwsjzamaf",
+        "symbol": "ZEBI-84F",
+        "total_supply": "1000000000.00000000"
+    },
+    {
+        "contract_address": "0x1Ba42e5193dfA8B03D15dd1B86a3113bbBEF8Eeb",
+        "contract_decimals": 18,
+        "mintable": true,
+        "name": "ZECBEP2",
+        "original_symbol": "ZEC",
+        "owner": "bnb1akey87kt0r8y3fmhu2l8eyzdjvt9ptl5cppz0v",
+        "symbol": "ZEC-93E",
+        "total_supply": "100000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "Zedec",
+        "original_symbol": "ZED",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZED-A89",
+        "total_supply": "34500000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZedIEA",
+        "original_symbol": "ZIEA",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZIEA-C04",
+        "total_supply": "6035000000.00000000"
+    },
+    {
+        "contract_address": "0xb86AbCb37C3A4B64f74f59301AFF131a1BEcC787",
+        "contract_decimals": 12,
+        "mintable": true,
+        "name": "Zilliqa",
+        "original_symbol": "ZIL",
+        "owner": "bnb1v8vkkymvhe2sf7gd2092ujc6hweta38xadu2pj",
+        "symbol": "ZIL-BB2",
+        "total_supply": "102654588.43671169"
+    },
+    {
+        "mintable": false,
+        "name": "ZedPay",
+        "original_symbol": "ZPAY",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZPAY-29A",
+        "total_supply": "450000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZedPorto",
+        "original_symbol": "ZPORT",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZPORT-AAB",
+        "total_supply": "320000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZRemit",
+        "original_symbol": "ZREMT",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZREMT-B76",
+        "total_supply": "100000000.00000000"
+    },
+    {
+        "mintable": false,
+        "name": "ZedYield",
+        "original_symbol": "ZYUL",
+        "owner": "bnb17pe7r06rq5h6plnrdpxyp2vwhd5xm56guccjst",
+        "symbol": "ZYUL-C2C",
+        "total_supply": "50000000.00000000"
+    }
+]

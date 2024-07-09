@@ -27,7 +27,7 @@ const (
 	mockMerkleRoot   = "0x59bb94f7047904a8fdaec42e4785295167f7fd63742b309afeb84bd71f8e6554"
 )
 
-func makeMockStore() (store.Store, error) {
+func makeMockStore() (store.GeneralStore, error) {
 	initSDK()
 	return memory.NewMemoryStore(
 		path.Join(mockDataBasePath, "merkle_proofs.json"),

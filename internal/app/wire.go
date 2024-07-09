@@ -12,6 +12,7 @@ import (
 	"github.com/bnb-chain/token-recover-app/internal/injection"
 	"github.com/bnb-chain/token-recover-app/internal/module/approval"
 	"github.com/bnb-chain/token-recover-app/internal/module/http"
+	"github.com/bnb-chain/token-recover-app/internal/module/tracker"
 )
 
 func Initialize(configPath string) (Application, error) {
@@ -20,10 +21,12 @@ func Initialize(configPath string) (Application, error) {
 		config.NewConfig,
 		injection.InitLogger,
 		injection.InitKeyManager,
+		injection.InitTokenListProvider,
 		injection.InitStore,
 		injection.InitMetrics,
 		injection.InitPrometheusRegister,
 		approval.NewApprovalService,
+		tracker.NewEventTracker,
 		http.NewHttpServer,
 	)
 	return Application{}, nil

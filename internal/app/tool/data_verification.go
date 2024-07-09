@@ -49,7 +49,7 @@ func (tool *Tool) VerifyDataFromFullnode(nodeCtx *config.BNBBeaconChainContext, 
 	dapp := app.NewBNBBeaconChain(ctx.Logger, db, io.Discard)
 	appCtx := dapp.NewContext(sdk.RunTxModeCheck, abci.Header{})
 
-	totalInStore, err := tool.store.CountAccountAssetProofs()
+	totalInStore, err := tool.store.ProofStore().CountAccountAssetProofs()
 	if err != nil {
 		return err
 	}
@@ -84,7 +84,7 @@ func (tool *Tool) VerifyDataFromFullnode(nodeCtx *config.BNBBeaconChainContext, 
 
 		for _, coin := range allCoins {
 			if coin.Amount > 0 {
-				proof, err := tool.store.GetAccountAssetProof(addr, coin.Denom)
+				proof, err := tool.store.ProofStore().GetAccountAssetProof(addr, coin.Denom)
 				if err != nil {
 					tool.logger.Error().Str("address", addr.String()).Str("symbol", coin.Denom).Msg("proof not found")
 					return true
