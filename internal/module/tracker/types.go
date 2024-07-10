@@ -40,6 +40,7 @@ type TokenRecoverEventResponse struct {
 	Symbol          string                   `json:"symbol"`
 	Amount          *big.Int                 `json:"amount"`
 	Status          store.TokenRecoverStatus `json:"status"`
+	UnlockAt        int64                    `json:"unlock_at"`
 	ContractAddress common.Address           `json:"contract_address,omitempty"`
 }
 
@@ -49,6 +50,7 @@ func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 		Symbol          string                   `json:"symbol"`
 		Amount          Decimal                  `json:"amount"`
 		Status          store.TokenRecoverStatus `json:"status"`
+		UnlockAt        int64                    `json:"unlock_at,omitempty"`
 		ContractAddress string                   `json:"contract_address,omitempty"`
 	}
 
@@ -61,6 +63,7 @@ func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 		Symbol:          resp.Symbol,
 		Amount:          Decimal(*resp.Amount),
 		Status:          resp.Status,
+		UnlockAt:        resp.UnlockAt,
 		ContractAddress: contractAddr,
 	})
 }
