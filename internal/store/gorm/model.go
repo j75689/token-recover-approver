@@ -26,5 +26,8 @@ type TokenRecoverEvent struct {
 	ClaimAddress         string `json:"claim_address" gorm:"index"`
 	UnlockAt             int64  `json:"unlock_at"`
 	Status               int8   `json:"status"`
+	RecoveredBlockNumber uint64 `json:"recovered_block_number"`
+	RecoveredTxHash      string `json:"recovered_tx_hash"`
 	WithdrawTxHash       string `json:"withdraw_tx_hash"`
+	CancelledTxHash      string `json:"cancelled_tx_hash"`
 }

@@ -90,8 +90,8 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 				defer cancel()
 				var head *types.Header
 				err = rpcClient.CallContext(ctx, &head, "eth_getBlockByNumber", "finalized", false)
-				if err == nil && head == nil {
-					tracker.logger.Error().Msg("failed to get finalized block")
+				if err != nil || head == nil {
+					tracker.logger.Error().Err(err).Msg("failed to get finalized block")
 					continue
 				}
 				tracker.logger.Info().Uint64("block_number", head.Number.Uint64()).Msg("get finalized block")
@@ -128,8 +128,9 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 				tokenRecoverEvents := make([]*store.TokenRecoverEvent, 0, len(eventLogs))
 				tokenRecoverRequestedResults := make(map[string]tokenrecoverportal.TokenRecoverRequestedEvent, len(eventLogs))
 				tokenRecoverLockedResults := make(map[string]tokenhub.TokenRecoverLockedEvent, len(eventLogs))
-				withdrawUnlockedTokenResults := make([]tokenhub.WithdrawUnlockedTokenEvent, 0, len(eventLogs))
-				cancelTokenRecoverLockResults := make([]tokenhub.CancelTokenRecoverLockEvent, 0, len(eventLogs))
+				withdrawUnlockedTokenResults := make(map[string]tokenhub.WithdrawUnlockedTokenEvent, len(eventLogs))
+				cancelTokenRecoverLockResults := make(map[string]tokenhub.CancelTokenRecoverLockEvent, len(eventLogs))
+				txToBlockNumber := make(map[string]uint64, len(eventLogs))
 				for _, vLog := range eventLogs {
 					tracker.logger.Debug().
 						Str("block_hash", vLog.BlockHash.Hex()).
@@ -147,6 +148,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 							tracker.logger.Debug().Err(err).Msg("failed to unpack TokenRecoverRequested event")
 						} else {
 							tokenRecoverRequestedResults[vLog.TxHash.Hex()] = tokenRecoverRequestEvent
+							txToBlockNumber[vLog.TxHash.Hex()] = vLog.BlockNumber
 						}
 					}
 
@@ -157,7 +159,6 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 							if err != nil {
 								tracker.logger.Debug().Err(err).Msg("failed to unpack TokenRecoverLocked event")
 							} else {
-								// Get indexed parameters from topics
 								tokenSymbol := common.BytesToHash(vLog.Topics[1].Bytes())
 								tokenAddr := common.BytesToAddress(vLog.Topics[2].Bytes())
 								recipient := common.BytesToAddress(vLog.Topics[3].Bytes())
@@ -165,6 +166,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 								tokenRecoverLockedEvent.TokenAddr = tokenAddr
 								tokenRecoverLockedEvent.Recipient = recipient
 								tokenRecoverLockedResults[vLog.TxHash.Hex()] = tokenRecoverLockedEvent
+								txToBlockNumber[vLog.TxHash.Hex()] = vLog.BlockNumber
 							}
 						}
 
@@ -174,12 +176,12 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 							if err != nil {
 								tracker.logger.Debug().Err(err).Msg("failed to unpack WithdrawUnlockedToken event")
 							} else {
-								// Get indexed parameters from topics
 								tokenAddr := common.BytesToAddress(vLog.Topics[1].Bytes())
 								recipient := common.BytesToAddress(vLog.Topics[2].Bytes())
 								withdrawUnlockedTokenEvent.TokenAddr = tokenAddr
 								withdrawUnlockedTokenEvent.Recipient = recipient
-								withdrawUnlockedTokenResults = append(withdrawUnlockedTokenResults, withdrawUnlockedTokenEvent)
+								withdrawUnlockedTokenResults[vLog.TxHash.Hex()] = withdrawUnlockedTokenEvent
+								txToBlockNumber[vLog.TxHash.Hex()] = vLog.BlockNumber
 							}
 						}
 
@@ -189,14 +191,14 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 							if err != nil {
 								tracker.logger.Debug().Err(err).Msg("failed to unpack CancelTokenRecoverLock event")
 							} else {
-								// Get indexed parameters from topics
 								tokenSymbol := common.BytesToHash(vLog.Topics[1].Bytes())
 								tokenAddr := common.BytesToAddress(vLog.Topics[2].Bytes())
 								Attacker := common.BytesToAddress(vLog.Topics[3].Bytes())
 								cancelTokenRecoverLockEvent.TokenSymbol = tokenSymbol
 								cancelTokenRecoverLockEvent.TokenAddr = tokenAddr
 								cancelTokenRecoverLockEvent.Attacker = Attacker
-								cancelTokenRecoverLockResults = append(cancelTokenRecoverLockResults, cancelTokenRecoverLockEvent)
+								cancelTokenRecoverLockResults[vLog.TxHash.Hex()] = cancelTokenRecoverLockEvent
+								txToBlockNumber[vLog.TxHash.Hex()] = vLog.BlockNumber
 							}
 						}
 					}
@@ -223,6 +225,8 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 						Amount:               amount,
 						ClaimAddress:         common.Address(claimAddress),
 						UnlockAt:             unlockAt.Int64(),
+						RecoveredBlockNumber: txToBlockNumber[txHash],
+						RecoveredTxHash:      common.HexToHash(txHash),
 						Status:               status,
 					}
 
@@ -237,7 +241,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 					tokenRecoverEvents = append(tokenRecoverEvents, event)
 				}
 
-				for _, withdrawUnlockedTokenEvent := range withdrawUnlockedTokenResults {
+				for txHash, withdrawUnlockedTokenEvent := range withdrawUnlockedTokenResults {
 					tokenAddress := withdrawUnlockedTokenEvent.TokenAddr
 					claimAddress := withdrawUnlockedTokenEvent.Recipient
 					amount := withdrawUnlockedTokenEvent.Amount
@@ -259,10 +263,11 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 						event.Status == store.Locked &&
 						event.Amount.Cmp(amount) == 0 {
 						event.Status = store.Unlocked
+						event.WithdrawTxHash = common.HexToHash(txHash)
 						tokenRecoverEvents = append(tokenRecoverEvents, event)
 					}
 				}
-				for _, cancelTokenRecoverLockEvent := range cancelTokenRecoverLockResults {
+				for txHash, cancelTokenRecoverLockEvent := range cancelTokenRecoverLockResults {
 					tokenSymbol := util.DecodeBytesToSymbol(cancelTokenRecoverLockEvent.TokenSymbol[:])
 					claimAddress := common.Address(cancelTokenRecoverLockEvent.Attacker)
 					amount := cancelTokenRecoverLockEvent.Amount
@@ -281,6 +286,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 
 					if err == nil {
 						event.Status = store.Cancelled
+						event.CancelledTxHash = common.HexToHash(txHash)
 						tokenRecoverEvents = append(tokenRecoverEvents, event)
 					}
 				}

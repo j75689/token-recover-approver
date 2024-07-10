@@ -60,12 +60,15 @@ const (
 )
 
 type TokenRecoverEvent struct {
-	TokenOwner           sdk.AccAddress     `json:"token_owner" gorm:"index"`
+	TokenOwner           sdk.AccAddress     `json:"token_owner"`
 	TokenContractAddress common.Address     `json:"token_contract_address"`
 	Denom                string             `json:"denom"`
 	Amount               *big.Int           `json:"amount"`
-	ClaimAddress         common.Address     `json:"claim_address" gorm:"index"`
+	ClaimAddress         common.Address     `json:"claim_address"`
 	UnlockAt             int64              `json:"unlock_at"`
 	Status               TokenRecoverStatus `json:"status"`
+	RecoveredBlockNumber uint64             `json:"recovered_block_number"`
+	RecoveredTxHash      common.Hash        `json:"recovered_tx_hash"`
 	WithdrawTxHash       common.Hash        `json:"withdraw_tx_hash"`
+	CancelledTxHash      common.Hash        `json:"cancelled_tx_hash"`
 }

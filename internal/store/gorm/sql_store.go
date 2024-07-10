@@ -206,7 +206,10 @@ func (s *SQLStore) BatchSaveTokenRecoverEvent(events []*store.TokenRecoverEvent)
 			ClaimAddress:         event.ClaimAddress.Hex(),
 			UnlockAt:             event.UnlockAt,
 			Status:               int8(event.Status),
+			RecoveredBlockNumber: event.RecoveredBlockNumber,
+			RecoveredTxHash:      event.RecoveredTxHash.Hex(),
 			WithdrawTxHash:       event.WithdrawTxHash.Hex(),
+			CancelledTxHash:      event.CancelledTxHash.Hex(),
 		})
 	}
 
@@ -239,8 +242,17 @@ func (s *SQLStore) convertCondition(condition store.TokenRecoverEvent) *TokenRec
 	if condition.Status != 0 {
 		result.Status = int8(condition.Status)
 	}
+	if condition.RecoveredBlockNumber != 0 {
+		result.RecoveredBlockNumber = condition.RecoveredBlockNumber
+	}
+	if condition.RecoveredTxHash != store.EmptyTxHash {
+		result.RecoveredTxHash = condition.RecoveredTxHash.Hex()
+	}
 	if condition.WithdrawTxHash != store.EmptyTxHash {
 		result.WithdrawTxHash = condition.WithdrawTxHash.Hex()
+	}
+	if condition.CancelledTxHash != store.EmptyTxHash {
+		result.CancelledTxHash = condition.CancelledTxHash.Hex()
 	}
 	return result
 }
@@ -270,7 +282,10 @@ func (s *SQLStore) GetTokenRecoverEvents(condition store.TokenRecoverEvent, pagi
 			ClaimAddress:         common.HexToAddress(event.ClaimAddress),
 			UnlockAt:             event.UnlockAt,
 			Status:               store.TokenRecoverStatus(event.Status),
+			RecoveredBlockNumber: event.RecoveredBlockNumber,
+			RecoveredTxHash:      common.HexToHash(event.RecoveredTxHash),
 			WithdrawTxHash:       common.HexToHash(event.WithdrawTxHash),
+			CancelledTxHash:      common.HexToHash(event.CancelledTxHash),
 		})
 	}
 	return tokenRecoverEvents, count, nil
@@ -294,7 +309,10 @@ func (s *SQLStore) GetTokenRecoverEvent(condition store.TokenRecoverEvent) (*sto
 		ClaimAddress:         common.HexToAddress(event.ClaimAddress),
 		UnlockAt:             event.UnlockAt,
 		Status:               store.TokenRecoverStatus(event.Status),
+		RecoveredBlockNumber: event.RecoveredBlockNumber,
+		RecoveredTxHash:      common.HexToHash(event.RecoveredTxHash),
 		WithdrawTxHash:       common.HexToHash(event.WithdrawTxHash),
+		CancelledTxHash:      common.HexToHash(event.CancelledTxHash),
 	}, nil
 }
 
