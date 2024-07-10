@@ -30,8 +30,12 @@ type BscBlockStore interface {
 	SaveProcessedBlockNumber(number *big.Int) error
 }
 
+type ExtraCondition struct {
+	AllowUnlocked bool
+}
+
 type TokenRecoverEventStore interface {
 	GetTokenRecoverEvent(condition TokenRecoverEvent) (*TokenRecoverEvent, error)
-	GetTokenRecoverEvents(condition TokenRecoverEvent, pagination Pagination) ([]*TokenRecoverEvent, int64, error)
+	GetTokenRecoverEvents(condition TokenRecoverEvent, pagination Pagination, extraCondition *ExtraCondition) ([]*TokenRecoverEvent, int64, error)
 	BatchSaveTokenRecoverEvent(events []*TokenRecoverEvent) error
 }

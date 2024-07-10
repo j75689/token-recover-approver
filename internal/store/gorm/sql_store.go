@@ -214,8 +214,20 @@ func (s *SQLStore) BatchSaveTokenRecoverEvent(events []*store.TokenRecoverEvent)
 	}
 
 	return s.db.Model(&TokenRecoverEvent{}).Clauses(clause.OnConflict{
-		Columns:   []clause.Column{{Name: "id"}},                                        // key colume
-		DoUpdates: clause.AssignmentColumns([]string{"token_owner", "denom", "amount"}), // column needed to be updated
+		Columns: []clause.Column{{Name: "token_owner"}, {Name: "denom"}, {Name: "amount"}}, // key colume
+		DoUpdates: clause.AssignmentColumns([]string{
+			"token_owner",
+			"token_contract_address",
+			"denom",
+			"amount",
+			"claim_address",
+			"unlock_at",
+			"status",
+			"recovered_block_number",
+			"recovered_tx_hash",
+			"withdraw_tx_hash",
+			"cancelled_tx_hash",
+		}), // column needed to be updated
 	}).Create(&tokenRecoverEvents).Error
 }
 
@@ -258,15 +270,20 @@ func (s *SQLStore) convertCondition(condition store.TokenRecoverEvent) *TokenRec
 }
 
 // GetTokenRecoverEvents implements store.TokenRecoverEventStore.
-func (s *SQLStore) GetTokenRecoverEvents(condition store.TokenRecoverEvent, pagination store.Pagination) ([]*store.TokenRecoverEvent, int64, error) {
+func (s *SQLStore) GetTokenRecoverEvents(condition store.TokenRecoverEvent, pagination store.Pagination, extraCondition *store.ExtraCondition) ([]*store.TokenRecoverEvent, int64, error) {
+	tx := s.db.Model(&TokenRecoverEvent{}).Where(s.convertCondition(condition))
+	if extraCondition != nil && extraCondition.AllowUnlocked {
+		tx.Where("unlock_at < ? AND status < ?", time.Now().Unix(), store.Withdrawing)
+	}
+
 	var count int64
-	result := s.db.Model(&TokenRecoverEvent{}).Where(s.convertCondition(condition)).Count(&count)
+	result := tx.Count(&count)
 	if result.Error != nil {
 		return nil, 0, result.Error
 	}
 
 	var events []*TokenRecoverEvent
-	result = s.db.Model(&TokenRecoverEvent{}).Where(s.convertCondition(condition)).
+	result = tx.
 		Offset(pagination.Offset).Limit(pagination.Limit).Find(&events)
 	if result.Error != nil {
 		return nil, 0, result.Error

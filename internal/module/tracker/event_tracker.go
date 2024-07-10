@@ -9,6 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethclient"
@@ -259,9 +260,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 							Msg("failed to get token recover event for withdraw event")
 					}
 
-					if err == nil &&
-						event.Status == store.Locked &&
-						event.Amount.Cmp(amount) == 0 {
+					if err == nil {
 						event.Status = store.Unlocked
 						event.WithdrawTxHash = common.HexToHash(txHash)
 						tokenRecoverEvents = append(tokenRecoverEvents, event)
@@ -305,6 +304,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 				tracker.logger.Info().Uint64("block_number", targetNumber.Uint64()).Msg("save processed block number")
 
 			case <-tracker.stopChan:
+				tracker.logger.Info().Msg("stop listening token recover event")
 				return
 			}
 		}
@@ -314,6 +314,120 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 }
 
 func (tracker *EventTracker) StartAutoWithdrawBot() error {
+	client, err := ethclient.Dial(tracker.config.BSC.URL)
+	if err != nil {
+		return err
+	}
+	tokenHubContract, err := tokenhub.NewTokenhub(TokenHubContractAddress, client)
+	if err != nil {
+		return err
+	}
+	go func() {
+		ticker := time.NewTicker(time.Duration(tracker.config.BSC.BlockInterval) * time.Second)
+		defer ticker.Stop()
+
+		for {
+			select {
+			case <-ticker.C:
+				events, _, err := tracker.store.TokenRecoverEventStore().GetTokenRecoverEvents(store.TokenRecoverEvent{},
+					store.Pagination{Offset: 0, Limit: int(tracker.config.BSC.WithdrawLimit)}, &store.ExtraCondition{AllowUnlocked: true})
+				if err != nil {
+					tracker.logger.Err(err).Msg("failed to get token recover events")
+					continue
+				}
+				if len(events) == 0 {
+					continue
+				}
+				func() {
+					ctx, cancel := context.WithTimeout(context.Background(), time.Duration(tracker.config.BSC.BlockInterval)*time.Second)
+					defer cancel()
+					balance, err := client.BalanceAt(ctx, tracker.km.Address(), nil)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to get balance")
+						return
+					}
+					tracker.logger.Info().Str("address", tracker.km.Address().Hex()).Str("balance", balance.String()).Msg("balance of bot account")
+
+					gasPrice, err := client.SuggestGasPrice(ctx)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to get gas price")
+						return
+					}
+					nonce, err := client.PendingNonceAt(context.Background(), tracker.km.Address())
+					if err != nil {
+						tracker.logger.Err(err).Str("address", tracker.km.Address().Hex()).Msg("failed to get nonce")
+						return
+					}
+					chainId, err := client.ChainID(ctx)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to get chain Id")
+						return
+					}
+					transactOpts, err := bind.NewKeyedTransactorWithChainID(tracker.km.PrivKey(), chainId)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to bind tx opts")
+						return
+					}
+					transactOpts.Nonce = big.NewInt(int64(nonce))
+					transactOpts.Value = common.Big0
+					transactOpts.GasLimit = tracker.config.BSC.GasLimit
+					transactOpts.GasPrice = gasPrice
+
+					waitingTx := make([]*types.Transaction, 0, len(events))
+					txToEvents := make(map[common.Hash]*store.TokenRecoverEvent, len(events))
+					for _, event := range events {
+						tokenContractAddress := common.HexToAddress("0x0000000000000000000000000000000000000000")
+						if event.Denom != "BNB" {
+							tokenContractAddress = event.TokenContractAddress
+						}
+						recipientAddress := event.ClaimAddress
+						tx, err := tokenHubContract.WithdrawUnlockedToken(transactOpts, tokenContractAddress, recipientAddress)
+						if err != nil {
+							tracker.logger.Error().Err(err).
+								Interface("event", event).
+								Msg("failed to send tx to chain")
+							break
+						}
+						tracker.logger.Info().Interface("event", event).Str("tx_hash", tx.Hash().Hex()).Msg("send a withdraw tx")
+						waitingTx = append(waitingTx, tx)
+						txToEvents[tx.Hash()] = event
+
+						transactOpts.Nonce = new(big.Int).Add(transactOpts.Nonce, common.Big1)
+					}
+
+					confirmedEvents := make([]*store.TokenRecoverEvent, 0, len(events))
+					for _, tx := range waitingTx {
+						receipt, err := bind.WaitMined(context.Background(), client, tx)
+						if err != nil {
+							continue
+						}
+						if receipt.Status != 1 {
+							tracker.logger.Error().Str("tx_hash", tx.Hash().Hex()).Msg("tx execution fail")
+							continue
+						}
+
+						event := txToEvents[tx.Hash()]
+						event.Status = store.Unlocked
+						event.WithdrawTxHash = tx.Hash()
+						confirmedEvents = append(confirmedEvents, event)
+					}
+
+					if len(confirmedEvents) > 0 {
+						err = tracker.store.TokenRecoverEventStore().BatchSaveTokenRecoverEvent(confirmedEvents)
+						if err != nil {
+							tracker.logger.Err(err).Int("events_num", len(confirmedEvents)).Msg("failed to save confirmed events")
+						}
+					}
+
+					tracker.logger.Info().Int("events_num", len(events)).Int("confirmed_events_num", len(confirmedEvents)).Msg("success to withdraw events")
+				}()
+
+			case <-tracker.stopChan:
+				tracker.logger.Info().Msg("stop auto withdraw bot")
+				return
+			}
+		}
+	}()
 	return nil
 }
 

@@ -32,3 +32,7 @@ func (pk *PrivKey) Sign(message []byte) (signature []byte, err error) {
 func (pk *PrivKey) PubKey() *PubKey {
 	return NewPubKey(&pk.privKey.PublicKey)
 }
+
+func (pk *PrivKey) RawPrivKey() *ecdsa.PrivateKey {
+	return pk.privKey
+}

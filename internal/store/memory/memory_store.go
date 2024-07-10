@@ -76,7 +76,7 @@ func (ss *MemoryStore) BatchSaveTokenRecoverEvent(events []*store.TokenRecoverEv
 }
 
 // GetTokenRecoverEvents implements store.TokenRecoverEventStore.
-func (ss *MemoryStore) GetTokenRecoverEvents(condition store.TokenRecoverEvent, pagination store.Pagination) ([]*store.TokenRecoverEvent, int64, error) {
+func (ss *MemoryStore) GetTokenRecoverEvents(condition store.TokenRecoverEvent, pagination store.Pagination, extraCondition *store.ExtraCondition) ([]*store.TokenRecoverEvent, int64, error) {
 	panic("unsupported")
 }
 

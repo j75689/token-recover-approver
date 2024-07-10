@@ -18,11 +18,10 @@ type ChainState struct {
 }
 
 type TokenRecoverEvent struct {
-	gorm.Model
-	TokenOwner           string `json:"token_owner" gorm:"index"`
+	TokenOwner           string `json:"token_owner" gorm:"primaryKey"`
 	TokenContractAddress string `json:"token_contract_address"`
-	Denom                string `json:"denom"`
-	Amount               string `json:"amount"`
+	Denom                string `json:"denom" gorm:"primaryKey"`
+	Amount               string `json:"amount" gorm:"primaryKey"`
 	ClaimAddress         string `json:"claim_address" gorm:"index"`
 	UnlockAt             int64  `json:"unlock_at"`
 	Status               int8   `json:"status"`

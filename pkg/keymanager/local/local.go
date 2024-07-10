@@ -1,6 +1,8 @@
 package local
 
 import (
+	"crypto/ecdsa"
+
 	"github.com/ethereum/go-ethereum/common"
 
 	"github.com/bnb-chain/token-recover-app/pkg/crypto/ethsecp256k1"
@@ -19,6 +21,11 @@ func NewLocalKeyManager(secret string) (*LocalKeyManager, error) {
 
 type LocalKeyManager struct {
 	privKey *ethsecp256k1.PrivKey
+}
+
+// PrivKey implements keymanager.KeyManager.
+func (km *LocalKeyManager) PrivKey() *ecdsa.PrivateKey {
+	return km.privKey.RawPrivKey()
 }
 
 // Address implements keymanager.KeyManager.

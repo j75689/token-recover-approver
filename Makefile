@@ -18,13 +18,13 @@ run:
 	@go run -ldflags="$(ldflags)" main.go --config ./configs/default.config.yaml
 
 run-sqlite:
-	@go run -ldflags="$(ldflags)" main.go --config ./configs/sqlite.config.yaml --modules "api,tracker"
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/sqlite.config.yaml --modules "api,tracker,bot"
 
 run-mysql:
-	@go run -ldflags="$(ldflags)" main.go --config ./configs/mysql.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/mysql.config.yaml --modules "api,tracker,bot"
 
 run-pgsql:
-	@go run -ldflags="$(ldflags)" main.go --config ./configs/pgsql.config.yaml
+	@go run -ldflags="$(ldflags)" main.go --config ./configs/pgsql.config.yaml --modules "api,tracker,bot"
 
 build:
 	go build -ldflags="$(ldflags)" -o ./build/bin/app main.go

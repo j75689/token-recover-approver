@@ -87,6 +87,7 @@ func (server *HttpServer) GetTokenRecoverEvents(w http.ResponseWriter, r *http.R
 			Offset: 0,
 			Limit:  math.MaxInt,
 		},
+		nil,
 	)
 	if err != nil {
 		server.Response(w, InvalidRequest, http.StatusInternalServerError, nil, nil, err)

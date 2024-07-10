@@ -1,6 +1,8 @@
 package aws
 
 import (
+	"crypto/ecdsa"
+
 	"github.com/ethereum/go-ethereum/common"
 
 	"github.com/bnb-chain/token-recover-app/pkg/crypto/ethsecp256k1"
@@ -23,6 +25,11 @@ func NewSecretManager(secretName, region string) (*SecretManager, error) {
 
 type SecretManager struct {
 	privKey *ethsecp256k1.PrivKey
+}
+
+// PrivKey implements keymanager.KeyManager.
+func (km *SecretManager) PrivKey() *ecdsa.PrivateKey {
+	return km.privKey.RawPrivKey()
 }
 
 // Address implements keymanager.KeyManager.

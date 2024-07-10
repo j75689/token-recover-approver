@@ -47,7 +47,9 @@ func (application Application) Start(modules []Modules) error {
 				return application.eventTracker.StartListeningTokenRecoverEvent()
 			})
 		case BotModule:
-			//TODO
+			eg.Go(func() error {
+				return application.eventTracker.StartAutoWithdrawBot()
+			})
 		}
 	}
 

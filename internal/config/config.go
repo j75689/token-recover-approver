@@ -172,10 +172,11 @@ func defaultStoreConfig(v *viper.Viper) {
 
 type BSCConfig struct {
 	URL           string `mapstructure:"url"`
-	GasLimit      int64  `mapstructure:"gas_limit"`
+	GasLimit      uint64 `mapstructure:"gas_limit"`
 	StartHeight   int64  `mapstructure:"start_height"`
 	BlockInterval int64  `mapstructure:"block_interval"`
 	ProcessLimit  int64  `mapstructure:"process_limit"`
+	WithdrawLimit int64  `mapstructure:"withdraw_limit"`
 }
 
 func defaultBSCConfig(v *viper.Viper) {
@@ -184,6 +185,7 @@ func defaultBSCConfig(v *viper.Viper) {
 	v.SetDefault("bsc.start_height", 0)
 	v.SetDefault("bsc.block_interval", 3)
 	v.SetDefault("bsc.process_limit", 1000)
+	v.SetDefault("bsc.withdraw_limit", 100)
 }
 
 type TokenListConfig struct {
