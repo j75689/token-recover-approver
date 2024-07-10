@@ -126,7 +126,6 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 					continue
 				}
 
-				tokenRecoverEvents := make([]*store.TokenRecoverEvent, 0, len(eventLogs))
 				tokenRecoverRequestedResults := make(map[string]tokenrecoverportal.TokenRecoverRequestedEvent, len(eventLogs))
 				tokenRecoverLockedResults := make(map[string]tokenhub.TokenRecoverLockedEvent, len(eventLogs))
 				withdrawUnlockedTokenResults := make(map[string]tokenhub.WithdrawUnlockedTokenEvent, len(eventLogs))
@@ -205,6 +204,7 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 					}
 				}
 
+				tokenRecoverEvents := make([]*store.TokenRecoverEvent, 0, len(eventLogs))
 				for txHash, tokenRecoverRequestedEvent := range tokenRecoverRequestedResults {
 					tokenRecoverLockedEvent, ok := tokenRecoverLockedResults[txHash]
 					if !ok {
@@ -241,7 +241,14 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 						Msg("found a token recover event")
 					tokenRecoverEvents = append(tokenRecoverEvents, event)
 				}
+				if len(tokenRecoverEvents) > 0 {
+					err = tracker.store.TokenRecoverEventStore().BatchSaveTokenRecoverEvent(tokenRecoverEvents)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to save token recover events")
+					}
+				}
 
+				withdrawTokenEvents := make([]*store.TokenRecoverEvent, 0, len(eventLogs))
 				for txHash, withdrawUnlockedTokenEvent := range withdrawUnlockedTokenResults {
 					tokenAddress := withdrawUnlockedTokenEvent.TokenAddr
 					claimAddress := withdrawUnlockedTokenEvent.Recipient
@@ -263,9 +270,17 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 					if err == nil {
 						event.Status = store.Unlocked
 						event.WithdrawTxHash = common.HexToHash(txHash)
-						tokenRecoverEvents = append(tokenRecoverEvents, event)
+						withdrawTokenEvents = append(withdrawTokenEvents, event)
 					}
 				}
+				if len(withdrawTokenEvents) > 0 {
+					err = tracker.store.TokenRecoverEventStore().BatchSaveTokenRecoverEvent(withdrawTokenEvents)
+					if err != nil {
+						tracker.logger.Err(err).Msg("failed to save token withdraw events")
+					}
+				}
+
+				cancelTokenEvents := make([]*store.TokenRecoverEvent, 0, len(eventLogs))
 				for txHash, cancelTokenRecoverLockEvent := range cancelTokenRecoverLockResults {
 					tokenSymbol := util.DecodeBytesToSymbol(cancelTokenRecoverLockEvent.TokenSymbol[:])
 					claimAddress := common.Address(cancelTokenRecoverLockEvent.Attacker)
@@ -286,14 +301,13 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 					if err == nil {
 						event.Status = store.Cancelled
 						event.CancelledTxHash = common.HexToHash(txHash)
-						tokenRecoverEvents = append(tokenRecoverEvents, event)
+						cancelTokenEvents = append(cancelTokenEvents, event)
 					}
 				}
-
-				if len(tokenRecoverEvents) > 0 {
-					err = tracker.store.TokenRecoverEventStore().BatchSaveTokenRecoverEvent(tokenRecoverEvents)
+				if len(cancelTokenEvents) > 0 {
+					err = tracker.store.TokenRecoverEventStore().BatchSaveTokenRecoverEvent(cancelTokenEvents)
 					if err != nil {
-						tracker.logger.Err(err).Msg("failed to save token recover events")
+						tracker.logger.Err(err).Msg("failed to save canceled token events")
 					}
 				}
 
