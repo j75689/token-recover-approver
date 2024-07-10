@@ -2,7 +2,6 @@ package tracker
 
 import (
 	"context"
-	"fmt"
 	"math/big"
 	"strings"
 	"time"
@@ -181,7 +180,6 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 								withdrawUnlockedTokenEvent.TokenAddr = tokenAddr
 								withdrawUnlockedTokenEvent.Recipient = recipient
 								withdrawUnlockedTokenResults = append(withdrawUnlockedTokenResults, withdrawUnlockedTokenEvent)
-								fmt.Println("DEBUGGGG!!! WithdrawUnlockedToken", fmt.Sprintf("%+v", withdrawUnlockedTokenEvent))
 							}
 						}
 
@@ -199,7 +197,6 @@ func (tracker *EventTracker) StartListeningTokenRecoverEvent() error {
 								cancelTokenRecoverLockEvent.TokenAddr = tokenAddr
 								cancelTokenRecoverLockEvent.Attacker = Attacker
 								cancelTokenRecoverLockResults = append(cancelTokenRecoverLockResults, cancelTokenRecoverLockEvent)
-								fmt.Println("DEBUGGGG!!! CancelTokenRecoverLock", fmt.Sprintf("%+v", cancelTokenRecoverLockEvent))
 							}
 						}
 					}
