@@ -1,4 +1,4 @@
-# TOKEN RECOVER APPROVER
+# TOKEN RECOVER APPROVER APP Backend
 
 <p>
   <a href="https://github.com/bnb-chain/token-recover-app/blob/develop/COPYING">
@@ -47,6 +47,9 @@ make run
 
 ```bash
 ## sqlite
+/mnt/efs/bsc-qa/bc-fusion/approval_service/approver tool migration-from-local-to-sql --config /server/token_approver/config.yaml --proof_path /server/token_approver/merkle_proofs.json
+
+
 ./build/bin/approver tool migration-from-local-to-sql --config ./configs/sqlite.config.yaml --proof_path ./example/store/merkle_proofs.json
 ## mysql
 ./build/bin/approver tool migration-from-local-to-sql --config ./configs/mysql.config.yaml --proof_path ./example/store/merkle_proofs.json
