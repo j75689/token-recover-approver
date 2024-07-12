@@ -36,22 +36,24 @@ func (f Decimal) BigInt() *big.Int {
 }
 
 type TokenRecoverEventResponse struct {
-	Name            string                   `json:"name"`
-	Symbol          string                   `json:"symbol"`
-	Amount          *big.Int                 `json:"amount"`
-	Status          store.TokenRecoverStatus `json:"status"`
-	UnlockAt        int64                    `json:"unlock_at"`
-	ContractAddress common.Address           `json:"contract_address,omitempty"`
+	Name             string                   `json:"name"`
+	Symbol           string                   `json:"symbol"`
+	Amount           *big.Int                 `json:"amount"`
+	Status           store.TokenRecoverStatus `json:"status"`
+	UnlockAt         int64                    `json:"unlock_at"`
+	RecipientAddress common.Address           `json:"recipient_address,omitempty"`
+	ContractAddress  common.Address           `json:"contract_address,omitempty"`
 }
 
 func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 	type aliasTokenRecoverEventResponse struct {
-		Name            string                   `json:"name"`
-		Symbol          string                   `json:"symbol"`
-		Amount          Decimal                  `json:"amount"`
-		Status          store.TokenRecoverStatus `json:"status"`
-		UnlockAt        int64                    `json:"unlock_at,omitempty"`
-		ContractAddress string                   `json:"contract_address,omitempty"`
+		Name             string                   `json:"name"`
+		Symbol           string                   `json:"symbol"`
+		Amount           Decimal                  `json:"amount"`
+		Status           store.TokenRecoverStatus `json:"status"`
+		UnlockAt         int64                    `json:"unlock_at,omitempty"`
+		RecipientAddress string                   `json:"recipient_address,omitempty"`
+		ContractAddress  string                   `json:"contract_address,omitempty"`
 	}
 
 	contractAddr := ""
@@ -59,11 +61,12 @@ func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 		contractAddr = resp.ContractAddress.Hex()
 	}
 	return json.Marshal(&aliasTokenRecoverEventResponse{
-		Name:            resp.Name,
-		Symbol:          resp.Symbol,
-		Amount:          Decimal(*resp.Amount),
-		Status:          resp.Status,
-		UnlockAt:        resp.UnlockAt,
-		ContractAddress: contractAddr,
+		Name:             resp.Name,
+		Symbol:           resp.Symbol,
+		Amount:           Decimal(*resp.Amount),
+		Status:           resp.Status,
+		UnlockAt:         resp.UnlockAt,
+		RecipientAddress: resp.RecipientAddress.Hex(),
+		ContractAddress:  contractAddr,
 	})
 }

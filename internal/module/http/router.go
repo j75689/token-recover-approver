@@ -118,6 +118,7 @@ func (server *HttpServer) GetTokenRecoverEvents(w http.ResponseWriter, r *http.R
 		if ok {
 			tokenRecoverEventResponse.Status = tokenRecoverEvent.Status
 			tokenRecoverEventResponse.ContractAddress = tokenRecoverEvent.TokenContractAddress
+			tokenRecoverEventResponse.RecipientAddress = tokenRecoverEvent.ClaimAddress
 			tokenRecoverEventResponse.UnlockAt = tokenRecoverEvent.UnlockAt
 		}
 
@@ -164,6 +165,7 @@ func (server *HttpServer) GetTokenRecoverEvent(w http.ResponseWriter, r *http.Re
 	}
 	status := store.Pending
 	contractAddress := common.Address{}
+	recipientAddress := common.Address{}
 	unlockAt := int64(0)
 	if tokenInfo.ContractAddress == "" {
 		status = store.NotBounded
@@ -173,15 +175,17 @@ func (server *HttpServer) GetTokenRecoverEvent(w http.ResponseWriter, r *http.Re
 	if tokenRecoverEvent != nil {
 		status = tokenRecoverEvent.Status
 		contractAddress = tokenRecoverEvent.TokenContractAddress
+		recipientAddress = tokenRecoverEvent.ClaimAddress
 		unlockAt = tokenRecoverEvent.UnlockAt
 	}
 	server.Response(w, Success, http.StatusOK, nil, tracker.TokenRecoverEventResponse{
-		Name:            tokenInfo.Name,
-		Symbol:          proof.Denom,
-		Amount:          big.NewInt(proof.Amount),
-		Status:          status,
-		UnlockAt:        unlockAt,
-		ContractAddress: contractAddress,
+		Name:             tokenInfo.Name,
+		Symbol:           proof.Denom,
+		Amount:           big.NewInt(proof.Amount),
+		Status:           status,
+		UnlockAt:         unlockAt,
+		RecipientAddress: recipientAddress,
+		ContractAddress:  contractAddress,
 	}, nil)
 }
 
