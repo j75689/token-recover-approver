@@ -60,13 +60,17 @@ func (resp TokenRecoverEventResponse) MarshalJSON() ([]byte, error) {
 	if resp.ContractAddress != store.EmptyAccount {
 		contractAddr = resp.ContractAddress.Hex()
 	}
+	recipientAddress := ""
+	if resp.RecipientAddress != store.EmptyAccount {
+		recipientAddress = resp.RecipientAddress.Hex()
+	}
 	return json.Marshal(&aliasTokenRecoverEventResponse{
 		Name:             resp.Name,
 		Symbol:           resp.Symbol,
 		Amount:           Decimal(*resp.Amount),
 		Status:           resp.Status,
 		UnlockAt:         resp.UnlockAt,
-		RecipientAddress: resp.RecipientAddress.Hex(),
+		RecipientAddress: recipientAddress,
 		ContractAddress:  contractAddr,
 	})
 }
